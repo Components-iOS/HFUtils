@@ -1,0 +1,6 @@
+framework module HFUtils {
+  umbrella header "HFUtils-umbrella.h"
+
+  export *
+  module * { export * }
+}

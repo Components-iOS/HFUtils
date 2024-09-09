@@ -1,0 +1,22 @@
+PODS:
+  - HFUtils (0.1.0):
+    - HFUtils/AlertView (= 0.1.0)
+    - HFUtils/HUD (= 0.1.0)
+    - HFUtils/UserDefaults (= 0.1.0)
+  - HFUtils/AlertView (0.1.0)
+  - HFUtils/HUD (0.1.0)
+  - HFUtils/UserDefaults (0.1.0)
+
+DEPENDENCIES:
+  - HFUtils (from `../`)
+
+EXTERNAL SOURCES:
+  HFUtils:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  HFUtils: e514af077318a2f2e29a3d8d9c614aeaf57bf647
+
+PODFILE CHECKSUM: dfae54273e528bac2cfe8c90785bec76a6f8598a
+
+COCOAPODS: 1.15.2
