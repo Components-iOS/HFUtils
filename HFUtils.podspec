@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HFUtils'
-  s.version          = '0.1.0'
+  s.version          = '0.1.1'
   s.summary          = '工具类'
   s.description      = <<-DESC
 常用工具
@@ -19,8 +19,12 @@ Pod::Spec.new do |s|
   s.author           = { 'liuhongfei' => 'hongfei_liu@bizconf.cn' }
   s.source           = { :git => 'https://github.com/Components-iOS/HFUtils.git', :tag => s.version.to_s }
   s.ios.deployment_target = '12.0'
+  
+  s.resource_bundles = {
+      'HFUtils' => ['HFUtils/Assets/*']
+  }
 
-  s.source_files = 'HFUtils/Classes/**/*'
+  s.source_files = 'HFUtils/Classes/*.{h}'
   
   s.subspec 'UserDefaults' do |user|
       user.source_files = 'HFUtils/Classes/UserDefaults/**/*'
@@ -33,8 +37,4 @@ Pod::Spec.new do |s|
   s.subspec 'AlertView' do |alert|
       alert.source_files = 'HFUtils/Classes/AlertView/**/*'
   end
-  
-  s.resource_bundles = {
-      'HFUtils' => ['HFUtils/Assets/*']
-  }
 end

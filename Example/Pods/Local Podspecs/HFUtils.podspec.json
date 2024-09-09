@@ -1,6 +1,6 @@
 {
   "name": "HFUtils",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "summary": "工具类",
   "description": "常用工具",
   "homepage": "https://github.com/Components-iOS",
@@ -13,17 +13,17 @@
   },
   "source": {
     "git": "https://github.com/Components-iOS/HFUtils.git",
-    "tag": "0.1.0"
+    "tag": "0.1.1"
   },
   "platforms": {
     "ios": "12.0"
   },
-  "source_files": "HFUtils/Classes/**/*",
   "resource_bundles": {
     "HFUtils": [
       "HFUtils/Assets/*"
     ]
   },
+  "source_files": "HFUtils/Classes/*.{h}",
   "subspecs": [
     {
       "name": "UserDefaults",

@@ -7,48 +7,48 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		05C1CAFDEDA62AD3CFDBB5FF7D309F76 /* HFSwitchView.h in Headers */ = {isa = PBXBuildFile; fileRef = 390B0B92EDA0CF9BEBEE1EBEADF2069F /* HFSwitchView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1263C1F457B5A08FAC2519C1014EC1E8 /* HFButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 7117E5F234E1598F656505640D7174C7 /* HFButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		15B19776534E3760081008F15078566F /* Pods-HFUtils_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 30031F267EFB350BF24F77F16C49A11D /* Pods-HFUtils_Example-dummy.m */; };
 		16EA7DD8827A850761D4E900D6623957 /* Pods-HFUtils_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5C8FF9A7D2BF4DDE01C2A40E41EF6AD /* Pods-HFUtils_Tests-dummy.m */; };
-		1EEB09AF72DA36CA4C16FB613DB5FAE0 /* HFTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = C52D0C7BF10B886A8DD74EFADC4CEEB5 /* HFTextView.m */; };
-		21EDA5B099A9AC5D420568A67CDC96A8 /* HFAlertViewResponder.h in Headers */ = {isa = PBXBuildFile; fileRef = D5DFC98F4A6BED5EB5C638F53051B724 /* HFAlertViewResponder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		256108024A209FFB1308053BDA36ABE4 /* HFAlertViewStyleKit.h in Headers */ = {isa = PBXBuildFile; fileRef = E6C8FB141DD5A2C84DA287F60F601AC5 /* HFAlertViewStyleKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1E9C3A9759903AC1FD96A19E0DD859B5 /* HFSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 144919FBAD57F14868EBFDE34ACD5E3C /* HFSwitchView.m */; };
 		2CC2F340CEEABD22575C18C35B291C74 /* HFUtils-HFUtils in Resources */ = {isa = PBXBuildFile; fileRef = F37DACD70C42928AD90B45616939C8DE /* HFUtils-HFUtils */; };
 		2EE5E7DBA258832E9B7E731BC42CACC5 /* Pods-HFUtils_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C27BA182245B72532E7CA9B1408343D /* Pods-HFUtils_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2F343F796DA75E038BD78E3ABBC31B58 /* HFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A7A2E5C5231704ECB0DBF50362C3E01 /* HFButton.m */; };
-		31137B29B3BE72AAD7420A3837B29C39 /* HFMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = DD9673BF3D480D44B0F1FE834EA3F92C /* HFMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		485A2EC0476EF40A5FA42A87C6D557AE /* HFWindowVCHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = D780D6E0C83529DB80C07C4177DB7DB2 /* HFWindowVCHelper.m */; };
-		522716535E6C2BA45BAF114B301FCBF6 /* UIImage+ImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 5A55DBA270FA257F411739B25BA6F409 /* UIImage+ImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		54F473CF3DE30A8EA97BA9B7DF162930 /* HFUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = DE179002B3C08BF42A3BC315DEBBF890 /* HFUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		33E0E337CA1DD4401E117FCC01DB9408 /* HFProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 42923F283551B9EC20C94A091C3CD4BE /* HFProgressHUD.m */; };
+		34BF09C96DFC379E513F584AEBBACCAB /* HFAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = E9C919E8F330046A771EF28DF9D7B684 /* HFAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37B81B6FA3E753BEB0378DE8A4FF835E /* HFUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FD398BE8CA3C086A097BEF35EF88FDC8 /* HFUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4816934072307DA8AF6CEF50D31B3826 /* HFUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D15C05374C585BECB0EF5F49A6245D1 /* HFUtils-dummy.m */; };
+		5356BFF21E6D4CA48754501A2EFDB573 /* HFUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D48EC9A32D0EFABDC73995677D3751D /* HFUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		57866080A1E20C30FC326334F0F2D771 /* HFUserObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 0435C38D8B80FA223AB0EDD8384440ED /* HFUserObject.m */; };
 		58A71233F6C87EE2131374A7C5BB15F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		654DB3FC15323371F89F9DC58BD91EC8 /* HFKeychainUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C5B73277AFFC20B265E22D259A87E /* HFKeychainUserDefaults.m */; };
-		714BD699E1F02C86039D12494F6D1678 /* HFAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = BC05D20B8168F9A4BE294FF104FEFEA6 /* HFAlertView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7524993B46FA935F322DEA074AFDE22F /* HFUtils.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5F1B3E5EBBC26F9D5EC6A5142622CEB7 /* HFUtils.bundle */; };
-		76F3E1D9A35525257A0BDDA65FD4A8D1 /* HFAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = B1FF32AC8777CDD633A62F881729484D /* HFAlertView.m */; };
-		7C2C24AED63B70F5405EE2E7E68C1614 /* HFAlertViewStyleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C6AE7D061E6EEC30E7B94D08A1EBBCEE /* HFAlertViewStyleKit.m */; };
-		7ED174FD8EA3B12B74D6527F933D951B /* HFProgressHUD+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = EA6C49742BB05B99A1CC3C717BB42CDC /* HFProgressHUD+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		852C6FE8FF0838C213E43013C4A66996 /* HFWindowVCHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 231CD8B190D9E4A3ABB831A94717E1DF /* HFWindowVCHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8703B69974973BCABCE51FF38665BADB /* HFKeychainUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = C3CCE3C51776762B3F9562303D001EF7 /* HFKeychainUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9708ADE059A5EE26B321F8C96AE4973A /* HFUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C223C9D2489B489B7D3CE0C02E83843 /* HFUserDefaults.m */; };
-		97854ED949359D1F66425165D0DB2C68 /* HFSwitchView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E344BCC2F4CBC438F2CC6D7C1444AE0 /* HFSwitchView.m */; };
-		AC556C475E979B4DFC20D1EC863EE05C /* HFTimerDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = E51CE99553FCB3B70CD148CA6FF9399E /* HFTimerDisplay.m */; };
-		AE68A64660C716FE95DC85389FAFDD80 /* HFCodingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = B637432A5B88662C597960C57D5C3D70 /* HFCodingObject.m */; };
-		B5A26D5C68E54C8C482773870667F79F /* HFProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 79E41B60E909C8178923765BABC533C1 /* HFProgressHUD.m */; };
-		B7DB74A6219CD16F570F3F8FA3559EE0 /* HFProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 459FE5B4FDE5FAD98629D3C590507D57 /* HFProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		61C2517046DF63EE415870E4A4C949EA /* HFUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = E67C56D281F30D610EC4F3CB8A2156B3 /* HFUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		621140D72A8D5542BD6984F5902345DD /* HFButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 107ABD86FC478C4555F95FF810D26E7E /* HFButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7148AE4CCCB273E17ED0EC419515943E /* HFMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = F31D3D1453D2104BE54C15DE13405515 /* HFMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		742C1C99D3F1B4F798C425AD454F8547 /* HFKeychainUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 587F78E32BA37A256AB7F42A47D01CB4 /* HFKeychainUserDefaults.m */; };
+		7524993B46FA935F322DEA074AFDE22F /* HFUtils.bundle in Resources */ = {isa = PBXBuildFile; fileRef = BAE66BE8767273DA549DBE1F830C58D6 /* HFUtils.bundle */; };
+		7C6F8FC077326B63E44262CE5697EEB8 /* HFAlertViewStyleKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C7B91C61698038AC678CE66A2D10400 /* HFAlertViewStyleKit.m */; };
+		800F9371C42AEB9B68FACF5D0C273755 /* HFTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = AF9EAE7A48039EAE28C4BB6CF2F294E4 /* HFTextView.m */; };
+		8A539DF03525577499432D6AABD79DBC /* HFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 82082259B365458CD3C58263B3AD8E9F /* HFButton.m */; };
+		8ABEF78BB885A52D68EF1FAD4351E7F9 /* HFAlertViewResponder.h in Headers */ = {isa = PBXBuildFile; fileRef = 95D6CB9A9D90B6E0FC02BA45027F45BD /* HFAlertViewResponder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8AEF778CBB7D362871532F32DCE7855E /* HFKeychainUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = BCCC47F5DFEC8B0A8A03024C2D9B9C59 /* HFKeychainUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E91A00FE491859DD550A4B874675570 /* HFProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = F1649F34C93A3C11324F4E6394DBA6E0 /* HFProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8EDD6060FFDB81720E3F0B59B7A75B09 /* HFTimerDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B3D96EB9CCB1FB767AA6CBD2254DE7 /* HFTimerDisplay.m */; };
+		9D1525F27509ABCBB52B0BD240FB92B7 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = A79D9A451B8EF14B7D30200C55ED7BF9 /* UIImage+ImageEffects.m */; };
+		9D230D5F009ABC6E1A89054316E7D7C7 /* HFAlertViewStyleKit.h in Headers */ = {isa = PBXBuildFile; fileRef = BD317A5BA8FC07F9E8658F95A9763248 /* HFAlertViewStyleKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9DB64D6A17A6ADDC2616CAB0F438DB5E /* HFUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = AC0C2C887A22942A10031134B08967BE /* HFUserDefaults.m */; };
+		9F85F2E11139F12955C8C4EF3A94770F /* HFAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08DA53E5DD70F0DC046E924EEB142D3C /* HFAlertView.m */; };
+		9FDADCBA116917B6ADAE1A0A1E555CF9 /* HFCodingObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 166312F0C3B92F105097B3BE91618E7C /* HFCodingObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A3BCF684AEA9AD53CBE08129722B201B /* HFSwitchView.h in Headers */ = {isa = PBXBuildFile; fileRef = AAB1CEC06AB4FE3ECCBFBA8DD829CD97 /* HFSwitchView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A6E8E1E4F3256EF30B64411F847EE02E /* HFUserObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 36CE862270603B816AAEC425A5C4BF4B /* HFUserObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AC22F8F7355059A4F01EF8153D80D664 /* HFProgressHUD+Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = 372CF640C4EBF9BB59DA2B4804A82A6D /* HFProgressHUD+Utils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B753411CFE0E5734FEDF35EFF98E5C9E /* HFWindowVCHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B755B84356E537FC8CF75AC572284A /* HFWindowVCHelper.m */; };
 		B99F23C55BC3AC899A3AE6AB4D14E639 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
-		BA36B616794DBA52AB4B3F067F1C0535 /* HFAlertViewResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 6BEE6110FCEC9BA7D00101DBD62D62FD /* HFAlertViewResponder.m */; };
-		BB65CD29067B2541D39D8D31B056A9E8 /* HFProgressHUD+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 55518C19EBDC6DD7CE1592B50691785D /* HFProgressHUD+Utils.m */; };
+		BBE1A0FA8F67F2D6AE41B73D7172D594 /* HFTimerDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = E4EFE85EB279662D4EF67CF07620EB24 /* HFTimerDisplay.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD8C116819B5FAF65A4D7F88440072CC /* Pods-HFUtils_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CE37690EF9A400FA3DCF4D0AE65B04D7 /* Pods-HFUtils_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C70A18A97ACCF08A099A584D8090FC84 /* HFUtils-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C9518EF2BD6B406D514562ADCE3811A9 /* HFUtils-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C8B30F80A75B00DC756186C1680624AE /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 6325D75AFA0821BDDF9F8A89F1185213 /* UIImage+ImageEffects.m */; };
-		D06505D0C5ACBFAB4CF4270C07E7CEDE /* HFCodingObject.h in Headers */ = {isa = PBXBuildFile; fileRef = 59A9CA8075AF1F0301892E2F0776E80F /* HFCodingObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D980165A72DAAC6715F7C3B5A71FF290 /* HFTimerDisplay.h in Headers */ = {isa = PBXBuildFile; fileRef = F8A1564355A8ACB35FF0A4FF0421F42D /* HFTimerDisplay.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DCEE5F4AD2C04AB727BFC8AE9BDC80D5 /* HFUserObject.h in Headers */ = {isa = PBXBuildFile; fileRef = B5D811546A71B3625026CE837C0F0A73 /* HFUserObject.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DEA406A1FCC63EC401FDC90E5AB07B6E /* HFUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 284A8210ED0177C9D2199CB72C340636 /* HFUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DF79FA1FCC4DC16DBE1F5DCA3997D96F /* HFUserObject.m in Sources */ = {isa = PBXBuildFile; fileRef = FE411C4CA48A48E36BE7F74601DB9259 /* HFUserObject.m */; };
-		EE83CA49C92CF5265C63BCA3572D943A /* HFUtils-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8227F887A49AC6367FC7E412F2C8D9DC /* HFUtils-dummy.m */; };
-		F8DF6C7C2F6051DF79B368335838079C /* HFTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 66E5620D668AACC1D7C146AB740369FE /* HFTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BF4C30B2A9C2883E9ADC0E25C2D50B24 /* HFAlertViewResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = E90B2B9C5F8DDA0330883DA468B87C04 /* HFAlertViewResponder.m */; };
+		CD1937198619F2743F8686EC02CC9CFD /* HFProgressHUD+Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = 74143B76B232A178794C2FBF735FBD7F /* HFProgressHUD+Utils.m */; };
+		D947AD25BB1F8DAF743FF9586EF99435 /* HFCodingObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 90B3732EB4834024307AE932E587FEB7 /* HFCodingObject.m */; };
+		DD0B3B53B079A7A401B3FBF2938BD7B9 /* HFTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 3CBAAC45753F06FD782AE659E005578E /* HFTextView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E2FFD0E9DCF173450978D52DEA602233 /* UIImage+ImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = 334C8C6F46F8F90E910CC437058D8E80 /* UIImage+ImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7DC21D83139E9EB56BD9C6B384F72EC /* HFWindowVCHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 07753DD3E268BA4944F047BBD1FFAC1B /* HFWindowVCHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9FDE6799D0B869D6CE0E00D4F3FC636 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,73 +77,73 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		005E2E6728B4C97445A14C628A3A2C31 /* HFUtils.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HFUtils.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		055CD9F012AD1D3940EB61DA0928ED9C /* ResourceBundle-HFUtils-HFUtils-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-HFUtils-HFUtils-Info.plist"; sourceTree = "<group>"; };
+		00BB5859061B17FBE76ED62E4CF8D672 /* HFUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HFUtils-prefix.pch"; sourceTree = "<group>"; };
+		0435C38D8B80FA223AB0EDD8384440ED /* HFUserObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HFUserObject.m; path = HFUtils/Classes/UserDefaults/HFUserObject.m; sourceTree = "<group>"; };
 		069BD50E5A46743183264F81F06711C2 /* Pods-HFUtils_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HFUtils_Example.modulemap"; sourceTree = "<group>"; };
+		06F0B950CF1E542A0A7BCA1E49C13554 /* HFUtils-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HFUtils-Info.plist"; sourceTree = "<group>"; };
+		07753DD3E268BA4944F047BBD1FFAC1B /* HFWindowVCHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HFWindowVCHelper.h; path = HFUtils/Classes/HUD/HFWindowVCHelper.h; sourceTree = "<group>"; };
+		08DA53E5DD70F0DC046E924EEB142D3C /* HFAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HFAlertView.m; path = HFUtils/Classes/AlertView/HFAlertView.m; sourceTree = "<group>"; };
+		0D48EC9A32D0EFABDC73995677D3751D /* HFUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HFUtils.h; path = HFUtils/Classes/HFUtils.h; sourceTree = "<group>"; };
+		107ABD86FC478C4555F95FF810D26E7E /* HFButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HFButton.h; path = HFUtils/Classes/AlertView/HFButton.h; sourceTree = "<group>"; };
+		144919FBAD57F14868EBFDE34ACD5E3C /* HFSwitchView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HFSwitchView.m; path = HFUtils/Classes/AlertView/HFSwitchView.m; sourceTree = "<group>"; };
+		166312F0C3B92F105097B3BE91618E7C /* HFCodingObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HFCodingObject.h; path = HFUtils/Classes/UserDefaults/HFCodingObject.h; sourceTree = "<group>"; };
 		1923195317FB2334F3E2126ECB798218 /* Pods-HFUtils_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-HFUtils_Tests"; path = Pods_HFUtils_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1BBFEC3863727419AADE6DDAD46921B9 /* HFUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HFUtils.debug.xcconfig; sourceTree = "<group>"; };
-		1C223C9D2489B489B7D3CE0C02E83843 /* HFUserDefaults.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HFUserDefaults.m; sourceTree = "<group>"; };
-		231CD8B190D9E4A3ABB831A94717E1DF /* HFWindowVCHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HFWindowVCHelper.h; sourceTree = "<group>"; };
-		284A8210ED0177C9D2199CB72C340636 /* HFUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HFUtils.h; path = HFUtils/Classes/HFUtils.h; sourceTree = "<group>"; };
+		2D15C05374C585BECB0EF5F49A6245D1 /* HFUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HFUtils-dummy.m"; sourceTree = "<group>"; };
 		2E83F402D767580A63D3E8515F90976A /* Pods-HFUtils_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HFUtils_Example-frameworks.sh"; sourceTree = "<group>"; };
 		30031F267EFB350BF24F77F16C49A11D /* Pods-HFUtils_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HFUtils_Example-dummy.m"; sourceTree = "<group>"; };
+		334C8C6F46F8F90E910CC437058D8E80 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "HFUtils/Classes/AlertView/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
 		33699A9F4D9F82CFB2F2349D21F0AA83 /* Pods-HFUtils_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HFUtils_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		390B0B92EDA0CF9BEBEE1EBEADF2069F /* HFSwitchView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HFSwitchView.h; sourceTree = "<group>"; };
-		3C2C5B73277AFFC20B265E22D259A87E /* HFKeychainUserDefaults.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HFKeychainUserDefaults.m; sourceTree = "<group>"; };
+		36CE862270603B816AAEC425A5C4BF4B /* HFUserObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HFUserObject.h; path = HFUtils/Classes/UserDefaults/HFUserObject.h; sourceTree = "<group>"; };
+		372CF640C4EBF9BB59DA2B4804A82A6D /* HFProgressHUD+Utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "HFProgressHUD+Utils.h"; path = "HFUtils/Classes/HUD/HFProgressHUD+Utils.h"; sourceTree = "<group>"; };
+		3CBAAC45753F06FD782AE659E005578E /* HFTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HFTextView.h; path = HFUtils/Classes/AlertView/HFTextView.h; sourceTree = "<group>"; };
+		42923F283551B9EC20C94A091C3CD4BE /* HFProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HFProgressHUD.m; path = HFUtils/Classes/HUD/HFProgressHUD.m; sourceTree = "<group>"; };
 		42A9C4D448F63CBDCB78EEB172AB2796 /* Pods-HFUtils_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HFUtils_Example-Info.plist"; sourceTree = "<group>"; };
-		459FE5B4FDE5FAD98629D3C590507D57 /* HFProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HFProgressHUD.h; sourceTree = "<group>"; };
 		47DA9D066D2865652825659A55E402BF /* Pods-HFUtils_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HFUtils_Tests-Info.plist"; sourceTree = "<group>"; };
 		4C163D6463D2C554CCFE1AD52DF819AB /* Pods-HFUtils_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HFUtils_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		4F6C3FA5FF4BCCED4E6B1EA8740A2D57 /* HFUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HFUtils.modulemap; sourceTree = "<group>"; };
-		55518C19EBDC6DD7CE1592B50691785D /* HFProgressHUD+Utils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HFProgressHUD+Utils.m"; sourceTree = "<group>"; };
 		5577A42B7107C2FAC95169C3282F8580 /* HFUtils */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = HFUtils; path = HFUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		59A9CA8075AF1F0301892E2F0776E80F /* HFCodingObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HFCodingObject.h; sourceTree = "<group>"; };
-		5A55DBA270FA257F411739B25BA6F409 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
-		5E8074A8EAAD0BF9E5B1C9EE97973301 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
-		5F1B3E5EBBC26F9D5EC6A5142622CEB7 /* HFUtils.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = HFUtils.bundle; path = HFUtils/Assets/HFUtils.bundle; sourceTree = "<group>"; };
-		6325D75AFA0821BDDF9F8A89F1185213 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
-		66E5620D668AACC1D7C146AB740369FE /* HFTextView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HFTextView.h; sourceTree = "<group>"; };
+		587F78E32BA37A256AB7F42A47D01CB4 /* HFKeychainUserDefaults.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HFKeychainUserDefaults.m; path = HFUtils/Classes/UserDefaults/HFKeychainUserDefaults.m; sourceTree = "<group>"; };
+		659831512EC9F92888EDCE81AA050CDC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		697D6ADD314C56814BB9D2BC03570C3F /* Pods-HFUtils_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-HFUtils_Tests.modulemap"; sourceTree = "<group>"; };
-		6BEE6110FCEC9BA7D00101DBD62D62FD /* HFAlertViewResponder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HFAlertViewResponder.m; sourceTree = "<group>"; };
 		6C27BA182245B72532E7CA9B1408343D /* Pods-HFUtils_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HFUtils_Tests-umbrella.h"; sourceTree = "<group>"; };
-		7117E5F234E1598F656505640D7174C7 /* HFButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HFButton.h; sourceTree = "<group>"; };
-		729DDD6D96F316D0747586760D9993D6 /* HFUtils-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HFUtils-Info.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		74143B76B232A178794C2FBF735FBD7F /* HFProgressHUD+Utils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "HFProgressHUD+Utils.m"; path = "HFUtils/Classes/HUD/HFProgressHUD+Utils.m"; sourceTree = "<group>"; };
 		7430904E40F5824B5F173F5D7978B7B4 /* Pods-HFUtils_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HFUtils_Example.release.xcconfig"; sourceTree = "<group>"; };
 		787A2C7516E795BADA20ED85C4EA433A /* Pods-HFUtils_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-HFUtils_Example"; path = Pods_HFUtils_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		79E41B60E909C8178923765BABC533C1 /* HFProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HFProgressHUD.m; sourceTree = "<group>"; };
-		7A7A2E5C5231704ECB0DBF50362C3E01 /* HFButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HFButton.m; sourceTree = "<group>"; };
 		7AB036DBED7D3DED56C0BFA50D1A7BA9 /* Pods-HFUtils_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HFUtils_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		8227F887A49AC6367FC7E412F2C8D9DC /* HFUtils-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HFUtils-dummy.m"; sourceTree = "<group>"; };
+		7B459633969812C6DF99EF5B0CDBC3EA /* HFUtils.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = HFUtils.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		7C7B91C61698038AC678CE66A2D10400 /* HFAlertViewStyleKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HFAlertViewStyleKit.m; path = HFUtils/Classes/AlertView/HFAlertViewStyleKit.m; sourceTree = "<group>"; };
+		82082259B365458CD3C58263B3AD8E9F /* HFButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HFButton.m; path = HFUtils/Classes/AlertView/HFButton.m; sourceTree = "<group>"; };
 		83B80A5656B50CE685CA542DB1FB3AC0 /* Pods-HFUtils_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HFUtils_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		98C0CF6FB155B0699F8000536287E505 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		90B3732EB4834024307AE932E587FEB7 /* HFCodingObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HFCodingObject.m; path = HFUtils/Classes/UserDefaults/HFCodingObject.m; sourceTree = "<group>"; };
+		95D6CB9A9D90B6E0FC02BA45027F45BD /* HFAlertViewResponder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HFAlertViewResponder.h; path = HFUtils/Classes/AlertView/HFAlertViewResponder.h; sourceTree = "<group>"; };
+		98B3D96EB9CCB1FB767AA6CBD2254DE7 /* HFTimerDisplay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HFTimerDisplay.m; path = HFUtils/Classes/AlertView/HFTimerDisplay.m; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E344BCC2F4CBC438F2CC6D7C1444AE0 /* HFSwitchView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HFSwitchView.m; sourceTree = "<group>"; };
 		A2CE912653BA74E18691B733D9A7EDAF /* Pods-HFUtils_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HFUtils_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		B1FF32AC8777CDD633A62F881729484D /* HFAlertView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HFAlertView.m; sourceTree = "<group>"; };
+		A79D9A451B8EF14B7D30200C55ED7BF9 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "HFUtils/Classes/AlertView/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		AAB1CEC06AB4FE3ECCBFBA8DD829CD97 /* HFSwitchView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HFSwitchView.h; path = HFUtils/Classes/AlertView/HFSwitchView.h; sourceTree = "<group>"; };
+		AC0C2C887A22942A10031134B08967BE /* HFUserDefaults.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HFUserDefaults.m; path = HFUtils/Classes/UserDefaults/HFUserDefaults.m; sourceTree = "<group>"; };
+		AD64088D0E3C9064E5118FC8FA749852 /* HFUtils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HFUtils.debug.xcconfig; sourceTree = "<group>"; };
+		AF9EAE7A48039EAE28C4BB6CF2F294E4 /* HFTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HFTextView.m; path = HFUtils/Classes/AlertView/HFTextView.m; sourceTree = "<group>"; };
 		B5C8FF9A7D2BF4DDE01C2A40E41EF6AD /* Pods-HFUtils_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HFUtils_Tests-dummy.m"; sourceTree = "<group>"; };
-		B5D811546A71B3625026CE837C0F0A73 /* HFUserObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HFUserObject.h; sourceTree = "<group>"; };
-		B637432A5B88662C597960C57D5C3D70 /* HFCodingObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HFCodingObject.m; sourceTree = "<group>"; };
-		BC05D20B8168F9A4BE294FF104FEFEA6 /* HFAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HFAlertView.h; sourceTree = "<group>"; };
-		C3CCE3C51776762B3F9562303D001EF7 /* HFKeychainUserDefaults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HFKeychainUserDefaults.h; sourceTree = "<group>"; };
-		C52D0C7BF10B886A8DD74EFADC4CEEB5 /* HFTextView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HFTextView.m; sourceTree = "<group>"; };
-		C6AE7D061E6EEC30E7B94D08A1EBBCEE /* HFAlertViewStyleKit.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HFAlertViewStyleKit.m; sourceTree = "<group>"; };
-		C9518EF2BD6B406D514562ADCE3811A9 /* HFUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HFUtils-umbrella.h"; sourceTree = "<group>"; };
+		BAE66BE8767273DA549DBE1F830C58D6 /* HFUtils.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = HFUtils.bundle; path = HFUtils/Assets/HFUtils.bundle; sourceTree = "<group>"; };
+		BCCC47F5DFEC8B0A8A03024C2D9B9C59 /* HFKeychainUserDefaults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HFKeychainUserDefaults.h; path = HFUtils/Classes/UserDefaults/HFKeychainUserDefaults.h; sourceTree = "<group>"; };
+		BD317A5BA8FC07F9E8658F95A9763248 /* HFAlertViewStyleKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HFAlertViewStyleKit.h; path = HFUtils/Classes/AlertView/HFAlertViewStyleKit.h; sourceTree = "<group>"; };
 		CE37690EF9A400FA3DCF4D0AE65B04D7 /* Pods-HFUtils_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-HFUtils_Example-umbrella.h"; sourceTree = "<group>"; };
 		CFA4774815109F1DCC2A2164E8801DB4 /* Pods-HFUtils_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HFUtils_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D5DFC98F4A6BED5EB5C638F53051B724 /* HFAlertViewResponder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HFAlertViewResponder.h; sourceTree = "<group>"; };
-		D780D6E0C83529DB80C07C4177DB7DB2 /* HFWindowVCHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HFWindowVCHelper.m; sourceTree = "<group>"; };
+		D08EA9415A4E43341C9AF2A283335146 /* ResourceBundle-HFUtils-HFUtils-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-HFUtils-HFUtils-Info.plist"; sourceTree = "<group>"; };
+		D4307D2AE1F0F6F7557679F23C188841 /* HFUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HFUtils.release.xcconfig; sourceTree = "<group>"; };
+		D4B03DB18F455F21E4B358BE1A245306 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		D736117BECD97B03C5E9E747DEA6AF9C /* HFUtils.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = HFUtils.modulemap; sourceTree = "<group>"; };
 		D812C74AB0C1ADE844CAF0DEC3213342 /* Pods-HFUtils_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HFUtils_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		DAE460C244F6C62D448C2B1233E90074 /* HFUtils-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HFUtils-prefix.pch"; sourceTree = "<group>"; };
-		DD9673BF3D480D44B0F1FE834EA3F92C /* HFMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HFMacros.h; sourceTree = "<group>"; };
-		DE179002B3C08BF42A3BC315DEBBF890 /* HFUserDefaults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HFUserDefaults.h; sourceTree = "<group>"; };
-		E51CE99553FCB3B70CD148CA6FF9399E /* HFTimerDisplay.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HFTimerDisplay.m; sourceTree = "<group>"; };
-		E6C8FB141DD5A2C84DA287F60F601AC5 /* HFAlertViewStyleKit.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HFAlertViewStyleKit.h; sourceTree = "<group>"; };
-		EA6C49742BB05B99A1CC3C717BB42CDC /* HFProgressHUD+Utils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HFProgressHUD+Utils.h"; sourceTree = "<group>"; };
+		E4EFE85EB279662D4EF67CF07620EB24 /* HFTimerDisplay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HFTimerDisplay.h; path = HFUtils/Classes/AlertView/HFTimerDisplay.h; sourceTree = "<group>"; };
+		E67C56D281F30D610EC4F3CB8A2156B3 /* HFUserDefaults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HFUserDefaults.h; path = HFUtils/Classes/UserDefaults/HFUserDefaults.h; sourceTree = "<group>"; };
+		E90B2B9C5F8DDA0330883DA468B87C04 /* HFAlertViewResponder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HFAlertViewResponder.m; path = HFUtils/Classes/AlertView/HFAlertViewResponder.m; sourceTree = "<group>"; };
+		E9C919E8F330046A771EF28DF9D7B684 /* HFAlertView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HFAlertView.h; path = HFUtils/Classes/AlertView/HFAlertView.h; sourceTree = "<group>"; };
+		F1649F34C93A3C11324F4E6394DBA6E0 /* HFProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HFProgressHUD.h; path = HFUtils/Classes/HUD/HFProgressHUD.h; sourceTree = "<group>"; };
+		F31D3D1453D2104BE54C15DE13405515 /* HFMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HFMacros.h; path = HFUtils/Classes/AlertView/HFMacros.h; sourceTree = "<group>"; };
 		F37DACD70C42928AD90B45616939C8DE /* HFUtils-HFUtils */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = "HFUtils-HFUtils"; path = HFUtils.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		F8A1564355A8ACB35FF0A4FF0421F42D /* HFTimerDisplay.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = HFTimerDisplay.h; sourceTree = "<group>"; };
-		FDC65A3357F3EEB778F7D3968ADFC633 /* HFUtils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HFUtils.release.xcconfig; sourceTree = "<group>"; };
-		FE411C4CA48A48E36BE7F74601DB9259 /* HFUserObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = HFUserObject.m; sourceTree = "<group>"; };
+		F4B755B84356E537FC8CF75AC572284A /* HFWindowVCHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HFWindowVCHelper.m; path = HFUtils/Classes/HUD/HFWindowVCHelper.m; sourceTree = "<group>"; };
+		FD398BE8CA3C086A097BEF35EF88FDC8 /* HFUtils-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HFUtils-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,21 +184,21 @@
 		2E766E3D61842F687FC6F4EF2814AC44 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3526229C19C428353E055E6E724EDF66 /* HFUtils */,
+				32D3F0919C8CDFA0B13671A000A152EB /* HFUtils */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		3526229C19C428353E055E6E724EDF66 /* HFUtils */ = {
+		32D3F0919C8CDFA0B13671A000A152EB /* HFUtils */ = {
 			isa = PBXGroup;
 			children = (
-				5F1B3E5EBBC26F9D5EC6A5142622CEB7 /* HFUtils.bundle */,
-				284A8210ED0177C9D2199CB72C340636 /* HFUtils.h */,
-				7D8D11475DE690877EDBC333059E28E2 /* AlertView */,
-				539A316457A5D8A275F3F1AC60121B29 /* HUD */,
-				F78F73897FABDEC6FB7724042EAE790E /* Pod */,
-				79DBA8EDFCB866B8A28F7B83A37EDD46 /* Support Files */,
-				706FB2AAECB43B60A9C8126AAC31B691 /* UserDefaults */,
+				BAE66BE8767273DA549DBE1F830C58D6 /* HFUtils.bundle */,
+				0D48EC9A32D0EFABDC73995677D3751D /* HFUtils.h */,
+				FB97DD81B09B01B449872FCA35E443FF /* AlertView */,
+				EFC6403C530FA2AC0309DA5BE5B6701B /* HUD */,
+				EE7F4A505DF9BFE832D06405995B53F4 /* Pod */,
+				492F640E2A52C94B1FE16D41B4B42690 /* Support Files */,
+				4BF632CCEA8AFDD5E061800041879989 /* UserDefaults */,
 			);
 			name = HFUtils;
 			path = ../..;
@@ -220,18 +220,35 @@
 			path = "Target Support Files/Pods-HFUtils_Tests";
 			sourceTree = "<group>";
 		};
-		539A316457A5D8A275F3F1AC60121B29 /* HUD */ = {
+		492F640E2A52C94B1FE16D41B4B42690 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				459FE5B4FDE5FAD98629D3C590507D57 /* HFProgressHUD.h */,
-				79E41B60E909C8178923765BABC533C1 /* HFProgressHUD.m */,
-				EA6C49742BB05B99A1CC3C717BB42CDC /* HFProgressHUD+Utils.h */,
-				55518C19EBDC6DD7CE1592B50691785D /* HFProgressHUD+Utils.m */,
-				231CD8B190D9E4A3ABB831A94717E1DF /* HFWindowVCHelper.h */,
-				D780D6E0C83529DB80C07C4177DB7DB2 /* HFWindowVCHelper.m */,
+				D736117BECD97B03C5E9E747DEA6AF9C /* HFUtils.modulemap */,
+				2D15C05374C585BECB0EF5F49A6245D1 /* HFUtils-dummy.m */,
+				06F0B950CF1E542A0A7BCA1E49C13554 /* HFUtils-Info.plist */,
+				00BB5859061B17FBE76ED62E4CF8D672 /* HFUtils-prefix.pch */,
+				FD398BE8CA3C086A097BEF35EF88FDC8 /* HFUtils-umbrella.h */,
+				AD64088D0E3C9064E5118FC8FA749852 /* HFUtils.debug.xcconfig */,
+				D4307D2AE1F0F6F7557679F23C188841 /* HFUtils.release.xcconfig */,
+				D08EA9415A4E43341C9AF2A283335146 /* ResourceBundle-HFUtils-HFUtils-Info.plist */,
 			);
-			name = HUD;
-			path = HFUtils/Classes/HUD;
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/HFUtils";
+			sourceTree = "<group>";
+		};
+		4BF632CCEA8AFDD5E061800041879989 /* UserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				166312F0C3B92F105097B3BE91618E7C /* HFCodingObject.h */,
+				90B3732EB4834024307AE932E587FEB7 /* HFCodingObject.m */,
+				BCCC47F5DFEC8B0A8A03024C2D9B9C59 /* HFKeychainUserDefaults.h */,
+				587F78E32BA37A256AB7F42A47D01CB4 /* HFKeychainUserDefaults.m */,
+				E67C56D281F30D610EC4F3CB8A2156B3 /* HFUserDefaults.h */,
+				AC0C2C887A22942A10031134B08967BE /* HFUserDefaults.m */,
+				36CE862270603B816AAEC425A5C4BF4B /* HFUserObject.h */,
+				0435C38D8B80FA223AB0EDD8384440ED /* HFUserObject.m */,
+			);
+			name = UserDefaults;
 			sourceTree = "<group>";
 		};
 		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
@@ -240,63 +257,6 @@
 				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
 			);
 			name = iOS;
-			sourceTree = "<group>";
-		};
-		706FB2AAECB43B60A9C8126AAC31B691 /* UserDefaults */ = {
-			isa = PBXGroup;
-			children = (
-				59A9CA8075AF1F0301892E2F0776E80F /* HFCodingObject.h */,
-				B637432A5B88662C597960C57D5C3D70 /* HFCodingObject.m */,
-				C3CCE3C51776762B3F9562303D001EF7 /* HFKeychainUserDefaults.h */,
-				3C2C5B73277AFFC20B265E22D259A87E /* HFKeychainUserDefaults.m */,
-				DE179002B3C08BF42A3BC315DEBBF890 /* HFUserDefaults.h */,
-				1C223C9D2489B489B7D3CE0C02E83843 /* HFUserDefaults.m */,
-				B5D811546A71B3625026CE837C0F0A73 /* HFUserObject.h */,
-				FE411C4CA48A48E36BE7F74601DB9259 /* HFUserObject.m */,
-			);
-			name = UserDefaults;
-			path = HFUtils/Classes/UserDefaults;
-			sourceTree = "<group>";
-		};
-		79DBA8EDFCB866B8A28F7B83A37EDD46 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				4F6C3FA5FF4BCCED4E6B1EA8740A2D57 /* HFUtils.modulemap */,
-				8227F887A49AC6367FC7E412F2C8D9DC /* HFUtils-dummy.m */,
-				729DDD6D96F316D0747586760D9993D6 /* HFUtils-Info.plist */,
-				DAE460C244F6C62D448C2B1233E90074 /* HFUtils-prefix.pch */,
-				C9518EF2BD6B406D514562ADCE3811A9 /* HFUtils-umbrella.h */,
-				1BBFEC3863727419AADE6DDAD46921B9 /* HFUtils.debug.xcconfig */,
-				FDC65A3357F3EEB778F7D3968ADFC633 /* HFUtils.release.xcconfig */,
-				055CD9F012AD1D3940EB61DA0928ED9C /* ResourceBundle-HFUtils-HFUtils-Info.plist */,
-			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/HFUtils";
-			sourceTree = "<group>";
-		};
-		7D8D11475DE690877EDBC333059E28E2 /* AlertView */ = {
-			isa = PBXGroup;
-			children = (
-				BC05D20B8168F9A4BE294FF104FEFEA6 /* HFAlertView.h */,
-				B1FF32AC8777CDD633A62F881729484D /* HFAlertView.m */,
-				D5DFC98F4A6BED5EB5C638F53051B724 /* HFAlertViewResponder.h */,
-				6BEE6110FCEC9BA7D00101DBD62D62FD /* HFAlertViewResponder.m */,
-				E6C8FB141DD5A2C84DA287F60F601AC5 /* HFAlertViewStyleKit.h */,
-				C6AE7D061E6EEC30E7B94D08A1EBBCEE /* HFAlertViewStyleKit.m */,
-				7117E5F234E1598F656505640D7174C7 /* HFButton.h */,
-				7A7A2E5C5231704ECB0DBF50362C3E01 /* HFButton.m */,
-				DD9673BF3D480D44B0F1FE834EA3F92C /* HFMacros.h */,
-				390B0B92EDA0CF9BEBEE1EBEADF2069F /* HFSwitchView.h */,
-				9E344BCC2F4CBC438F2CC6D7C1444AE0 /* HFSwitchView.m */,
-				66E5620D668AACC1D7C146AB740369FE /* HFTextView.h */,
-				C52D0C7BF10B886A8DD74EFADC4CEEB5 /* HFTextView.m */,
-				F8A1564355A8ACB35FF0A4FF0421F42D /* HFTimerDisplay.h */,
-				E51CE99553FCB3B70CD148CA6FF9399E /* HFTimerDisplay.m */,
-				5A55DBA270FA257F411739B25BA6F409 /* UIImage+ImageEffects.h */,
-				6325D75AFA0821BDDF9F8A89F1185213 /* UIImage+ImageEffects.m */,
-			);
-			name = AlertView;
-			path = HFUtils/Classes/AlertView;
 			sourceTree = "<group>";
 		};
 		B3BA8B54E242938291578575D300BE27 /* Products */ = {
@@ -338,14 +298,51 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F78F73897FABDEC6FB7724042EAE790E /* Pod */ = {
+		EE7F4A505DF9BFE832D06405995B53F4 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				005E2E6728B4C97445A14C628A3A2C31 /* HFUtils.podspec */,
-				98C0CF6FB155B0699F8000536287E505 /* LICENSE */,
-				5E8074A8EAAD0BF9E5B1C9EE97973301 /* README.md */,
+				7B459633969812C6DF99EF5B0CDBC3EA /* HFUtils.podspec */,
+				659831512EC9F92888EDCE81AA050CDC /* LICENSE */,
+				D4B03DB18F455F21E4B358BE1A245306 /* README.md */,
 			);
 			name = Pod;
+			sourceTree = "<group>";
+		};
+		EFC6403C530FA2AC0309DA5BE5B6701B /* HUD */ = {
+			isa = PBXGroup;
+			children = (
+				F1649F34C93A3C11324F4E6394DBA6E0 /* HFProgressHUD.h */,
+				42923F283551B9EC20C94A091C3CD4BE /* HFProgressHUD.m */,
+				372CF640C4EBF9BB59DA2B4804A82A6D /* HFProgressHUD+Utils.h */,
+				74143B76B232A178794C2FBF735FBD7F /* HFProgressHUD+Utils.m */,
+				07753DD3E268BA4944F047BBD1FFAC1B /* HFWindowVCHelper.h */,
+				F4B755B84356E537FC8CF75AC572284A /* HFWindowVCHelper.m */,
+			);
+			name = HUD;
+			sourceTree = "<group>";
+		};
+		FB97DD81B09B01B449872FCA35E443FF /* AlertView */ = {
+			isa = PBXGroup;
+			children = (
+				E9C919E8F330046A771EF28DF9D7B684 /* HFAlertView.h */,
+				08DA53E5DD70F0DC046E924EEB142D3C /* HFAlertView.m */,
+				95D6CB9A9D90B6E0FC02BA45027F45BD /* HFAlertViewResponder.h */,
+				E90B2B9C5F8DDA0330883DA468B87C04 /* HFAlertViewResponder.m */,
+				BD317A5BA8FC07F9E8658F95A9763248 /* HFAlertViewStyleKit.h */,
+				7C7B91C61698038AC678CE66A2D10400 /* HFAlertViewStyleKit.m */,
+				107ABD86FC478C4555F95FF810D26E7E /* HFButton.h */,
+				82082259B365458CD3C58263B3AD8E9F /* HFButton.m */,
+				F31D3D1453D2104BE54C15DE13405515 /* HFMacros.h */,
+				AAB1CEC06AB4FE3ECCBFBA8DD829CD97 /* HFSwitchView.h */,
+				144919FBAD57F14868EBFDE34ACD5E3C /* HFSwitchView.m */,
+				3CBAAC45753F06FD782AE659E005578E /* HFTextView.h */,
+				AF9EAE7A48039EAE28C4BB6CF2F294E4 /* HFTextView.m */,
+				E4EFE85EB279662D4EF67CF07620EB24 /* HFTimerDisplay.h */,
+				98B3D96EB9CCB1FB767AA6CBD2254DE7 /* HFTimerDisplay.m */,
+				334C8C6F46F8F90E910CC437058D8E80 /* UIImage+ImageEffects.h */,
+				A79D9A451B8EF14B7D30200C55ED7BF9 /* UIImage+ImageEffects.m */,
+			);
+			name = AlertView;
 			sourceTree = "<group>";
 		};
 		FE32F0F58BD7F8AD66555CCC2CEDB200 /* Pods-HFUtils_Example */ = {
@@ -368,31 +365,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		9777BC6C715AB372BE69316079EA0A2F /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				714BD699E1F02C86039D12494F6D1678 /* HFAlertView.h in Headers */,
-				21EDA5B099A9AC5D420568A67CDC96A8 /* HFAlertViewResponder.h in Headers */,
-				256108024A209FFB1308053BDA36ABE4 /* HFAlertViewStyleKit.h in Headers */,
-				1263C1F457B5A08FAC2519C1014EC1E8 /* HFButton.h in Headers */,
-				D06505D0C5ACBFAB4CF4270C07E7CEDE /* HFCodingObject.h in Headers */,
-				8703B69974973BCABCE51FF38665BADB /* HFKeychainUserDefaults.h in Headers */,
-				31137B29B3BE72AAD7420A3837B29C39 /* HFMacros.h in Headers */,
-				B7DB74A6219CD16F570F3F8FA3559EE0 /* HFProgressHUD.h in Headers */,
-				7ED174FD8EA3B12B74D6527F933D951B /* HFProgressHUD+Utils.h in Headers */,
-				05C1CAFDEDA62AD3CFDBB5FF7D309F76 /* HFSwitchView.h in Headers */,
-				F8DF6C7C2F6051DF79B368335838079C /* HFTextView.h in Headers */,
-				D980165A72DAAC6715F7C3B5A71FF290 /* HFTimerDisplay.h in Headers */,
-				54F473CF3DE30A8EA97BA9B7DF162930 /* HFUserDefaults.h in Headers */,
-				DCEE5F4AD2C04AB727BFC8AE9BDC80D5 /* HFUserObject.h in Headers */,
-				DEA406A1FCC63EC401FDC90E5AB07B6E /* HFUtils.h in Headers */,
-				C70A18A97ACCF08A099A584D8090FC84 /* HFUtils-umbrella.h in Headers */,
-				852C6FE8FF0838C213E43013C4A66996 /* HFWindowVCHelper.h in Headers */,
-				522716535E6C2BA45BAF114B301FCBF6 /* UIImage+ImageEffects.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		9A29BB165182A7C5EFE0E8AFA9332D80 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -406,6 +378,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				BD8C116819B5FAF65A4D7F88440072CC /* Pods-HFUtils_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C51DB87FD2B38165B71C851D109DE7FE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34BF09C96DFC379E513F584AEBBACCAB /* HFAlertView.h in Headers */,
+				8ABEF78BB885A52D68EF1FAD4351E7F9 /* HFAlertViewResponder.h in Headers */,
+				9D230D5F009ABC6E1A89054316E7D7C7 /* HFAlertViewStyleKit.h in Headers */,
+				621140D72A8D5542BD6984F5902345DD /* HFButton.h in Headers */,
+				9FDADCBA116917B6ADAE1A0A1E555CF9 /* HFCodingObject.h in Headers */,
+				8AEF778CBB7D362871532F32DCE7855E /* HFKeychainUserDefaults.h in Headers */,
+				7148AE4CCCB273E17ED0EC419515943E /* HFMacros.h in Headers */,
+				8E91A00FE491859DD550A4B874675570 /* HFProgressHUD.h in Headers */,
+				AC22F8F7355059A4F01EF8153D80D664 /* HFProgressHUD+Utils.h in Headers */,
+				A3BCF684AEA9AD53CBE08129722B201B /* HFSwitchView.h in Headers */,
+				DD0B3B53B079A7A401B3FBF2938BD7B9 /* HFTextView.h in Headers */,
+				BBE1A0FA8F67F2D6AE41B73D7172D594 /* HFTimerDisplay.h in Headers */,
+				61C2517046DF63EE415870E4A4C949EA /* HFUserDefaults.h in Headers */,
+				A6E8E1E4F3256EF30B64411F847EE02E /* HFUserObject.h in Headers */,
+				5356BFF21E6D4CA48754501A2EFDB573 /* HFUtils.h in Headers */,
+				37B81B6FA3E753BEB0378DE8A4FF835E /* HFUtils-umbrella.h in Headers */,
+				F7DC21D83139E9EB56BD9C6B384F72EC /* HFWindowVCHelper.h in Headers */,
+				E2FFD0E9DCF173450978D52DEA602233 /* UIImage+ImageEffects.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,8 +449,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B72BE1831DB8E056768743477D539D1A /* Build configuration list for PBXNativeTarget "HFUtils" */;
 			buildPhases = (
-				9777BC6C715AB372BE69316079EA0A2F /* Headers */,
-				C931B16AD032EF396662F5DDFF0701ED /* Sources */,
+				C51DB87FD2B38165B71C851D109DE7FE /* Headers */,
+				2E742E86802471299845A471DD376140 /* Sources */,
 				99BB7007583048629148448F23CA95F9 /* Frameworks */,
 				3AC753FFF41D971363A31732E034F46E /* Resources */,
 			);
@@ -550,6 +547,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		2E742E86802471299845A471DD376140 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9F85F2E11139F12955C8C4EF3A94770F /* HFAlertView.m in Sources */,
+				BF4C30B2A9C2883E9ADC0E25C2D50B24 /* HFAlertViewResponder.m in Sources */,
+				7C6F8FC077326B63E44262CE5697EEB8 /* HFAlertViewStyleKit.m in Sources */,
+				8A539DF03525577499432D6AABD79DBC /* HFButton.m in Sources */,
+				D947AD25BB1F8DAF743FF9586EF99435 /* HFCodingObject.m in Sources */,
+				742C1C99D3F1B4F798C425AD454F8547 /* HFKeychainUserDefaults.m in Sources */,
+				33E0E337CA1DD4401E117FCC01DB9408 /* HFProgressHUD.m in Sources */,
+				CD1937198619F2743F8686EC02CC9CFD /* HFProgressHUD+Utils.m in Sources */,
+				1E9C3A9759903AC1FD96A19E0DD859B5 /* HFSwitchView.m in Sources */,
+				800F9371C42AEB9B68FACF5D0C273755 /* HFTextView.m in Sources */,
+				8EDD6060FFDB81720E3F0B59B7A75B09 /* HFTimerDisplay.m in Sources */,
+				9DB64D6A17A6ADDC2616CAB0F438DB5E /* HFUserDefaults.m in Sources */,
+				57866080A1E20C30FC326334F0F2D771 /* HFUserObject.m in Sources */,
+				4816934072307DA8AF6CEF50D31B3826 /* HFUtils-dummy.m in Sources */,
+				B753411CFE0E5734FEDF35EFF98E5C9E /* HFWindowVCHelper.m in Sources */,
+				9D1525F27509ABCBB52B0BD240FB92B7 /* UIImage+ImageEffects.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		60837BC63C64602A0F663B728CF55354 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -562,29 +582,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				16EA7DD8827A850761D4E900D6623957 /* Pods-HFUtils_Tests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C931B16AD032EF396662F5DDFF0701ED /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				76F3E1D9A35525257A0BDDA65FD4A8D1 /* HFAlertView.m in Sources */,
-				BA36B616794DBA52AB4B3F067F1C0535 /* HFAlertViewResponder.m in Sources */,
-				7C2C24AED63B70F5405EE2E7E68C1614 /* HFAlertViewStyleKit.m in Sources */,
-				2F343F796DA75E038BD78E3ABBC31B58 /* HFButton.m in Sources */,
-				AE68A64660C716FE95DC85389FAFDD80 /* HFCodingObject.m in Sources */,
-				654DB3FC15323371F89F9DC58BD91EC8 /* HFKeychainUserDefaults.m in Sources */,
-				B5A26D5C68E54C8C482773870667F79F /* HFProgressHUD.m in Sources */,
-				BB65CD29067B2541D39D8D31B056A9E8 /* HFProgressHUD+Utils.m in Sources */,
-				97854ED949359D1F66425165D0DB2C68 /* HFSwitchView.m in Sources */,
-				1EEB09AF72DA36CA4C16FB613DB5FAE0 /* HFTextView.m in Sources */,
-				AC556C475E979B4DFC20D1EC863EE05C /* HFTimerDisplay.m in Sources */,
-				9708ADE059A5EE26B321F8C96AE4973A /* HFUserDefaults.m in Sources */,
-				DF79FA1FCC4DC16DBE1F5DCA3997D96F /* HFUserObject.m in Sources */,
-				EE83CA49C92CF5265C63BCA3572D943A /* HFUtils-dummy.m in Sources */,
-				485A2EC0476EF40A5FA42A87C6D557AE /* HFWindowVCHelper.m in Sources */,
-				C8B30F80A75B00DC756186C1680624AE /* UIImage+ImageEffects.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -622,7 +619,7 @@
 /* Begin XCBuildConfiguration section */
 		0FA7109C4A4530999A3AC0AD435E1563 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BBFEC3863727419AADE6DDAD46921B9 /* HFUtils.debug.xcconfig */;
+			baseConfigurationReference = AD64088D0E3C9064E5118FC8FA749852 /* HFUtils.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGNING_ALLOWED = NO;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/HFUtils";
@@ -705,7 +702,7 @@
 		};
 		2BADC7A44CB659949A7D656FE1B0B872 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDC65A3357F3EEB778F7D3968ADFC633 /* HFUtils.release.xcconfig */;
+			baseConfigurationReference = D4307D2AE1F0F6F7557679F23C188841 /* HFUtils.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -834,7 +831,7 @@
 		};
 		87572A1297F2062301A6E4851C1F66A3 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FDC65A3357F3EEB778F7D3968ADFC633 /* HFUtils.release.xcconfig */;
+			baseConfigurationReference = D4307D2AE1F0F6F7557679F23C188841 /* HFUtils.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGNING_ALLOWED = NO;
 				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/HFUtils";
@@ -886,7 +883,7 @@
 		};
 		CD585D9EA66119765073A67316537DD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BBFEC3863727419AADE6DDAD46921B9 /* HFUtils.debug.xcconfig */;
+			baseConfigurationReference = AD64088D0E3C9064E5118FC8FA749852 /* HFUtils.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				CLANG_ENABLE_OBJC_WEAK = NO;
