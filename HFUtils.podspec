@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HFUtils'
-  s.version          = '0.1.1'
+  s.version          = '0.1.3'
   s.summary          = '工具类'
   s.description      = <<-DESC
 常用工具
@@ -26,15 +26,21 @@ Pod::Spec.new do |s|
 
   s.source_files = 'HFUtils/Classes/*.{h}'
   
+  s.subspec 'Window' do |window|
+      window.source_files = 'HFUtils/Classes/Window/**/*'
+  end
+  
   s.subspec 'UserDefaults' do |user|
       user.source_files = 'HFUtils/Classes/UserDefaults/**/*'
   end
   
   s.subspec 'HUD' do |hud|
       hud.source_files = 'HFUtils/Classes/HUD/**/*'
+      hud.dependency 'HFUtils/Window'
   end
   
   s.subspec 'AlertView' do |alert|
       alert.source_files = 'HFUtils/Classes/AlertView/**/*'
+      alert.dependency 'HFUtils/Window'
   end
 end

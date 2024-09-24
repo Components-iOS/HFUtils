@@ -1,22 +1,53 @@
 PODS:
-  - HFUtils (0.1.1):
-    - HFUtils/AlertView (= 0.1.1)
-    - HFUtils/HUD (= 0.1.1)
-    - HFUtils/UserDefaults (= 0.1.1)
-  - HFUtils/AlertView (0.1.1)
-  - HFUtils/HUD (0.1.1)
-  - HFUtils/UserDefaults (0.1.1)
+  - HFMoMain (0.1.0):
+    - HFMoMain/Controller (= 0.1.0)
+    - HFMoMain/PublicAPI (= 0.1.0)
+    - HFMoMain/View (= 0.1.0)
+    - HFRouter
+  - HFMoMain/Controller (0.1.0):
+    - HFMoMain/View
+    - HFRouter
+  - HFMoMain/PublicAPI (0.1.0):
+    - HFMoMain/Controller
+    - HFMoMain/View
+    - HFRouter
+  - HFMoMain/View (0.1.0):
+    - HFRouter
+  - HFRouter (0.1.0):
+    - HFRouter/CTMediator (= 0.1.0)
+    - HFRouter/MGJRouter (= 0.1.0)
+  - HFRouter/CTMediator (0.1.0)
+  - HFRouter/MGJRouter (0.1.0)
+  - HFUtils (0.1.3):
+    - HFUtils/AlertView (= 0.1.3)
+    - HFUtils/HUD (= 0.1.3)
+    - HFUtils/UserDefaults (= 0.1.3)
+    - HFUtils/Window (= 0.1.3)
+  - HFUtils/AlertView (0.1.3):
+    - HFUtils/Window
+  - HFUtils/HUD (0.1.3):
+    - HFUtils/Window
+  - HFUtils/UserDefaults (0.1.3)
+  - HFUtils/Window (0.1.3)
 
 DEPENDENCIES:
+  - HFMoMain (= 0.1.0)
   - HFUtils (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - HFMoMain
+    - HFRouter
 
 EXTERNAL SOURCES:
   HFUtils:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HFUtils: 336656b46ccfa146e9d13a92626cb63eeeab60e5
+  HFMoMain: 33f1dea501d7046dae820e38fb250eee9682ee53
+  HFRouter: f75ea515014127a3b0e47a95524574523da07804
+  HFUtils: 3609aa98b5e7a931f0f92d386d51dbe1f09c90d4
 
-PODFILE CHECKSUM: dfae54273e528bac2cfe8c90785bec76a6f8598a
+PODFILE CHECKSUM: 9abdcd9841e7b6ed32b81a8b94f17b3358a5bab6
 
 COCOAPODS: 1.15.2

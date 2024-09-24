@@ -7,12 +7,39 @@
 //
 
 #import "HFAppDelegate.h"
+#import <HFRouter/MGJRouter.h>
+#import <HFMoMain/HFMainModuleAPI.h>
 
 @implementation HFAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    
+    NSMutableArray *dataMutArr = [@[] mutableCopy];
+    NSArray *vcArray = @[@"HFViewController"];
+    NSArray *titleArr = @[@"HFUtils"];
+    
+    for (int i = 0; i < vcArray.count; i++) {
+        NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+        dict[@"vc"] = [NSClassFromString(vcArray[i]) new];
+        dict[@"title"] = titleArr[i];
+        dict[@"isR"] = @(YES);
+        [dataMutArr addObject:dict];
+    }
+    
+    UIViewController *rootVC = [MGJRouter objectForURL:@"xmg://getRootVC"];
+    
+    for (NSDictionary *dict in dataMutArr) {
+        [MGJRouter openURL:@"xmg://addChildVC" withUserInfo:dict
+                completion:^(id result) {
+            NSLog(@"%@", result);
+        }];
+    }
+    
+    self.window.rootViewController = rootVC;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

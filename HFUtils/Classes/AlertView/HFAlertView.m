@@ -7,6 +7,7 @@
 //
 
 #import "HFAlertView.h"
+#import <HFUtils/HFWindowVCHelper.h>
 #import "HFAlertViewResponder.h"
 #import "HFAlertViewStyleKit.h"
 #import "UIImage+ImageEffects.h"
@@ -263,7 +264,7 @@ HFTimerDisplay *buttonTimer;
 
 - (void)setupNewWindow {
     // Save previous window
-    self.previousWindow = [UIApplication sharedApplication].keyWindow;
+    self.previousWindow = [HFWindowVCHelper currentWindow];
     
     // Create a new one to show the alert
     UIWindow *alertWindow = [[UIWindow alloc] initWithFrame:[self mainScreenFrame]];

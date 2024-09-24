@@ -125,6 +125,7 @@
     // 更深的黑色背景
     hud.label.text = message ? message : @"加载中...";
     hud.label.font = [UIFont systemFontOfSize:15.f];
+    hud.label.numberOfLines = 0;
     hud.contentColor = [UIColor whiteColor];
     hud.removeFromSuperViewOnHide = YES;
     hud.bezelView.style = HFProgressHUDBackgroundStyleSolidColor;
