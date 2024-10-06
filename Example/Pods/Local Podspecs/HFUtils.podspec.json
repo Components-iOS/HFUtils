@@ -50,6 +50,10 @@
 
         ]
       }
+    },
+    {
+      "name": "Timer",
+      "source_files": "HFUtils/Classes/Timer/**/*"
     }
   ]
 }

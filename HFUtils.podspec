@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HFUtils'
-  s.version          = '0.1.2'
+  s.version          = '0.1.3'
   s.summary          = '工具类'
   s.description      = <<-DESC
 常用工具
@@ -42,5 +42,9 @@ Pod::Spec.new do |s|
   s.subspec 'AlertView' do |alert|
       alert.source_files = 'HFUtils/Classes/AlertView/**/*'
       alert.dependency 'HFUtils/Window'
+  end
+  
+  s.subspec 'Timer' do |timer|
+      timer.source_files = 'HFUtils/Classes/Timer/**/*'
   end
 end

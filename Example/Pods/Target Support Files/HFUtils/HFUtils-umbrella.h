@@ -22,6 +22,7 @@
 #import "UIImage+ImageEffects.h"
 #import "HFProgressHUD+Utils.h"
 #import "HFProgressHUD.h"
+#import "HFGCDTimerManager.h"
 #import "HFCodingObject.h"
 #import "HFKeychainUserDefaults.h"
 #import "HFUserDefaults.h"
