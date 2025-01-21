@@ -18,19 +18,21 @@ PODS:
     - HFRouter/MGJRouter (= 0.1.0)
   - HFRouter/CTMediator (0.1.0)
   - HFRouter/MGJRouter (0.1.0)
-  - HFUtils (0.1.3):
-    - HFUtils/AlertView (= 0.1.3)
-    - HFUtils/HUD (= 0.1.3)
-    - HFUtils/Timer (= 0.1.3)
-    - HFUtils/UserDefaults (= 0.1.3)
-    - HFUtils/Window (= 0.1.3)
-  - HFUtils/AlertView (0.1.3):
+  - HFUtils (0.1.4):
+    - HFUtils/AlertView (= 0.1.4)
+    - HFUtils/HUD (= 0.1.4)
+    - HFUtils/Model (= 0.1.4)
+    - HFUtils/Timer (= 0.1.4)
+    - HFUtils/UserDefaults (= 0.1.4)
+    - HFUtils/Window (= 0.1.4)
+  - HFUtils/AlertView (0.1.4):
     - HFUtils/Window
-  - HFUtils/HUD (0.1.3):
+  - HFUtils/HUD (0.1.4):
     - HFUtils/Window
-  - HFUtils/Timer (0.1.3)
-  - HFUtils/UserDefaults (0.1.3)
-  - HFUtils/Window (0.1.3)
+  - HFUtils/Model (0.1.4)
+  - HFUtils/Timer (0.1.4)
+  - HFUtils/UserDefaults (0.1.4)
+  - HFUtils/Window (0.1.4)
 
 DEPENDENCIES:
   - HFMoMain (= 0.1.0)
@@ -48,8 +50,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   HFMoMain: 33f1dea501d7046dae820e38fb250eee9682ee53
   HFRouter: f75ea515014127a3b0e47a95524574523da07804
-  HFUtils: f9686c6203d201ebe35f9111b96bc0bc97067b2d
+  HFUtils: 20d9df1be41cf90db7ce1e329b68d1b7863d8284
 
 PODFILE CHECKSUM: 9abdcd9841e7b6ed32b81a8b94f17b3358a5bab6
 
-COCOAPODS: 1.15.2
+COCOAPODS: 1.16.2

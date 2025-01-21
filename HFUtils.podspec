@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HFUtils'
-  s.version          = '0.1.3'
+  s.version          = '0.1.4'
   s.summary          = '工具类'
   s.description      = <<-DESC
 常用工具
@@ -46,5 +46,9 @@ Pod::Spec.new do |s|
   
   s.subspec 'Timer' do |timer|
       timer.source_files = 'HFUtils/Classes/Timer/**/*'
+  end
+  
+  s.subspec 'Model' do |model|
+      model.source_files = 'HFUtils/Classes/Model/**/*'
   end
 end

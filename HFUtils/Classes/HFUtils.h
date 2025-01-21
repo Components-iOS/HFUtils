@@ -23,4 +23,13 @@
 // Alert
 #import "HFAlertView.h"
 
+// Model
+#import "HFModel.h"
+
+// Window
+#import "HFWindowVCHelper.h"
+
+// Timer
+#import "HFGCDTimerManager.h"
+
 #endif /* HFUtils_h */
