@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HFUtils'
-  s.version          = '0.1.4'
+  s.version          = '0.1.5'
   s.summary          = '工具类'
   s.description      = <<-DESC
 常用工具
@@ -50,5 +50,9 @@ Pod::Spec.new do |s|
   
   s.subspec 'Model' do |model|
       model.source_files = 'HFUtils/Classes/Model/**/*'
+  end
+  
+  s.subspec 'SwipeCell' do |swipeCell|
+      swipeCell.source_files = 'HFUtils/Classes/SwipeCell/**/*'
   end
 end

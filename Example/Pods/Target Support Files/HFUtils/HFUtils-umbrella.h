@@ -25,6 +25,8 @@
 #import "HFClassInfo.h"
 #import "HFModel.h"
 #import "NSObject+HFModel.h"
+#import "HFSwipeButton.h"
+#import "HFSwipeTableCell.h"
 #import "HFGCDTimerManager.h"
 #import "HFCodingObject.h"
 #import "HFKeychainUserDefaults.h"

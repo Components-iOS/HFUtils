@@ -1,6 +1,6 @@
 {
   "name": "HFUtils",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "summary": "工具类",
   "description": "常用工具",
   "homepage": "https://github.com/Components-iOS",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Components-iOS/HFUtils.git",
-    "tag": "0.1.4"
+    "tag": "0.1.5"
   },
   "platforms": {
     "ios": "12.0"
@@ -58,6 +58,10 @@
     {
       "name": "Model",
       "source_files": "HFUtils/Classes/Model/**/*"
+    },
+    {
+      "name": "SwipeCell",
+      "source_files": "HFUtils/Classes/SwipeCell/**/*"
     }
   ]
 }
