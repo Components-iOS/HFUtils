@@ -262,7 +262,7 @@
 }
 
 // 三角形
-- (void)drawTriangle{
+- (void)drawTriangle {
     CGFloat x = CGRectGetMidX(self.anchorRect) - CGRectGetMinX(self.contentView.frame);
     CGFloat y = 0;
     CGPoint p = CGPointZero;
@@ -340,7 +340,7 @@
     return _pullMenuConfig;
 }
 
-- (void)setZwPullMenuStyle:(HFPullMenuStyle)pullMenuStyle {
+- (void)setPullMenuStyle:(HFPullMenuStyle)pullMenuStyle {
     _pullMenuStyle = pullMenuStyle;
     
     switch (pullMenuStyle) {

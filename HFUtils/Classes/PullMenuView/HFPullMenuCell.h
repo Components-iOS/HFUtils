@@ -24,7 +24,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// 最后一栏cell
 @property (nonatomic, assign) BOOL isFinalCell;
 
-
 @end
 
 NS_ASSUME_NONNULL_END

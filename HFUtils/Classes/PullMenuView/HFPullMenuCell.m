@@ -9,8 +9,8 @@
 
 @interface HFPullMenuCell ()
 
-@property (strong, nonatomic) UIImageView *menuImageView;
-@property (strong, nonatomic) UILabel *menuTitleLab;
+@property (nonatomic, strong) UIImageView *menuImageView;
+@property (nonatomic, strong) UILabel *menuTitleLab;
 @property (nonatomic, strong) UIView *selectedBgView;
 @property (nonatomic, strong) CAShapeLayer *lineLayer;
 
