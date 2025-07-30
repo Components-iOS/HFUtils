@@ -34,11 +34,11 @@
 //            [HFProgressHUD showInfoMessage:@"显示信息"];
 //            [HFProgressHUD showSuccessMessage:@"加载成功"];
             
-            HFAlertView *alert = [[HFAlertView alloc] initWithNewWindow];
-            [alert setHorizontalButtons:YES];
-            [alert showSuccess:@"11111" subTitle:@"22222" closeButtonTitle:@"确定" duration:0.0f];
-
-            [self performSelector:@selector(dismiss) withObject:nil afterDelay:2];
+//            HFAlertView *alert = [[HFAlertView alloc] initWithNewWindow];
+//            [alert setHorizontalButtons:YES];
+//            [alert showSuccess:@"11111" subTitle:@"22222" closeButtonTitle:@"确定" duration:0.0f];
+//
+//            [self performSelector:@selector(dismiss) withObject:nil afterDelay:2];
         });
     });
 }

@@ -32,4 +32,14 @@
 // Timer
 #import "HFGCDTimerManager.h"
 
+// SwipeCell
+#import "HFSwipeButton.h"
+#import "HFSwipeTableCell.h"
+
+// Reachability
+#import "HFReachability.h"
+
+// PullMenuView
+#import "HFPullMenuView.h"
+
 #endif /* HFUtils_h */

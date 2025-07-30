@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HFUtils'
-  s.version          = '0.1.5'
+  s.version          = '0.1.6'
   s.summary          = '工具类'
   s.description      = <<-DESC
 常用工具
@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 
   s.homepage         = 'https://github.com/Components-iOS'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'liuhongfei' => 'hongfei_liu@bizconf.cn' }
+  s.author           = { 'liuhongfei' => '13718045729@163.com' }
   s.source           = { :git => 'https://github.com/Components-iOS/HFUtils.git', :tag => s.version.to_s }
   s.ios.deployment_target = '12.0'
   
@@ -54,5 +54,13 @@ Pod::Spec.new do |s|
   
   s.subspec 'SwipeCell' do |swipeCell|
       swipeCell.source_files = 'HFUtils/Classes/SwipeCell/**/*'
+  end
+  
+  s.subspec 'Reachability' do |reachability|
+      reachability.source_files = 'HFUtils/Classes/Reachability/**/*'
+  end
+  
+  s.subspec 'PullMenuView' do |pullMenuView|
+      pullMenuView.source_files = 'HFUtils/Classes/PullMenuView/**/*'
   end
 end
