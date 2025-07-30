@@ -42,58 +42,72 @@
 }
 
 #pragma mark - 初始化方法
-+ (instancetype)pullMenuAnchorView:(UIView *)anchorView {
-    return [self pullMenuAnchorView:anchorView titleArray:nil];
-}
-
 + (instancetype)pullMenuAnchorView:(UIView *)anchorView
-                        titleArray:(NSArray *)titleArray {
-    return [self pullMenuAnchorView:anchorView titleArray:titleArray imageArray:nil];
+                     currentWindow:(nullable UIWindow *)currentWindow {
+    return [self pullMenuAnchorView:anchorView titleArray:nil currentWindow:currentWindow];
 }
 
 + (instancetype)pullMenuAnchorView:(UIView *)anchorView
                         titleArray:(NSArray *)titleArray
-                        imageArray:(NSArray *)imageArray {
-    HFPullMenuView *menuView = [self pullMenuAnchorView:anchorView menuArray:nil];
+                     currentWindow:(nullable UIWindow *)currentWindow {
+    return [self pullMenuAnchorView:anchorView titleArray:titleArray imageArray:nil currentWindow:currentWindow];
+}
+
++ (instancetype)pullMenuAnchorView:(UIView *)anchorView
+                        titleArray:(NSArray *)titleArray
+                        imageArray:(NSArray *)imageArray
+                     currentWindow:(nullable UIWindow *)currentWindow {
+    HFPullMenuView *menuView = [self pullMenuAnchorView:anchorView menuArray:nil currentWindow:currentWindow];
     menuView.titleArray = titleArray;
     menuView.imageArray = imageArray;
     return menuView;
 }
 
 + (instancetype)pullMenuAnchorView:(UIView *)anchorView
-                         menuArray:(NSArray <HFPullMenuModel *>*)menuArray {
-    UIWindow *window = [[UIApplication sharedApplication] keyWindow];
+                         menuArray:(NSArray <HFPullMenuModel *>*)menuArray
+                     currentWindow:(nullable UIWindow *)currentWindow {
+    if (currentWindow == nil) {
+        currentWindow = [[[UIApplication sharedApplication] delegate] window];
+    }
+    
     HFPullMenuView *menuView = [[HFPullMenuView alloc] init];
     menuView.frame = [UIScreen mainScreen].bounds;
-    [window addSubview:menuView];
-    menuView.anchorRect = [anchorView convertRect:anchorView.bounds toView:window];
+    [currentWindow addSubview:menuView];
+    menuView.anchorRect = [anchorView convertRect:anchorView.bounds toView:currentWindow];
     menuView.menuArray = menuArray;
     return menuView;
 }
 
-+ (instancetype)pullMenuAnchorPoint:(CGPoint)anchorPoint {
-    return [self pullMenuAnchorPoint:anchorPoint titleArray:nil];
++ (instancetype)pullMenuAnchorPoint:(CGPoint)anchorPoint
+                      currentWindow:(nullable UIWindow *)currentWindow {
+    return [self pullMenuAnchorPoint:anchorPoint titleArray:nil currentWindow:currentWindow];
 }
 
-+ (instancetype)pullMenuAnchorPoint:(CGPoint)anchorPoint titleArray:(NSArray *)titleArray {
-    return [self pullMenuAnchorPoint:anchorPoint titleArray:titleArray imageArray:nil];
++ (instancetype)pullMenuAnchorPoint:(CGPoint)anchorPoint titleArray:(NSArray *)titleArray
+                      currentWindow:(nullable UIWindow *)currentWindow {
+    return [self pullMenuAnchorPoint:anchorPoint titleArray:titleArray imageArray:nil currentWindow:currentWindow];
 }
 
 + (instancetype)pullMenuAnchorPoint:(CGPoint)anchorPoint
                          titleArray:(NSArray *)titleArray
-                         imageArray:(NSArray *)imageArray {
-    HFPullMenuView *menuView = [self pullMenuAnchorPoint:anchorPoint menuArray:nil];
+                         imageArray:(NSArray *)imageArray
+                      currentWindow:(nullable UIWindow *)currentWindow {
+    HFPullMenuView *menuView = [self pullMenuAnchorPoint:anchorPoint menuArray:nil currentWindow:currentWindow];
     menuView.titleArray = titleArray;
     menuView.imageArray = imageArray;
     return menuView;
 }
 
 + (instancetype)pullMenuAnchorPoint:(CGPoint)anchorPoint
-                          menuArray:(NSArray <HFPullMenuModel *>*)menuArray {
-    UIWindow * window=[[[UIApplication sharedApplication] delegate] window];
+                          menuArray:(NSArray <HFPullMenuModel *>*)menuArray
+                      currentWindow:(nullable UIWindow *)currentWindow {
+    if (currentWindow == nil) {
+        currentWindow = [[[UIApplication sharedApplication] delegate] window];
+    }
+    
     HFPullMenuView *menuView = [[HFPullMenuView alloc] init];
     menuView.frame = [UIScreen mainScreen].bounds;
-    [window addSubview:menuView];
+    [currentWindow addSubview:menuView];
     menuView.anchorRect = CGRectMake(anchorPoint.x, anchorPoint.y, 0, 0);
     menuView.menuArray = menuArray;
     return menuView;

@@ -51,15 +51,20 @@ NS_ASSUME_NONNULL_BEGIN
 ///   - menuArray: 图文Model数组
 ///   - titleArray: 文字数组
 ///   - imageArray: 图片数组
+///   - currentWindow: 当前window
 /// - Note: 箭头指向依赖视图
-+ (instancetype)pullMenuAnchorView:(UIView *)anchorView;
 + (instancetype)pullMenuAnchorView:(UIView *)anchorView
-                        titleArray:(nullable NSArray *)titleArray;
+                    currentWindow:(nullable UIWindow *)currentWindow;
 + (instancetype)pullMenuAnchorView:(UIView *)anchorView
                         titleArray:(nullable NSArray *)titleArray
-                        imageArray:(nullable NSArray *)imageArray;
+                     currentWindow:(nullable UIWindow *)currentWindow;
 + (instancetype)pullMenuAnchorView:(UIView *)anchorView
-                         menuArray:(nullable NSArray <HFPullMenuModel *>*)menuArray;
+                        titleArray:(nullable NSArray *)titleArray
+                        imageArray:(nullable NSArray *)imageArray
+                     currentWindow:(nullable UIWindow *)currentWindow;
++ (instancetype)pullMenuAnchorView:(UIView *)anchorView
+                         menuArray:(nullable NSArray <HFPullMenuModel *>*)menuArray
+                     currentWindow:(nullable UIWindow *)currentWindow;
 
 /// 初始化方法（推荐）
 /// - Parameters:
@@ -67,15 +72,20 @@ NS_ASSUME_NONNULL_BEGIN
 ///   - menuArray: 图文Model数组
 ///   - titleArray: 文字数组
 ///   - imageArray: 图片数组
+///   - currentWindow: 当前window
 /// - Note: 下拉依赖绝对坐标，箭头指向点
-+ (instancetype)pullMenuAnchorPoint:(CGPoint)anchorPoint;
 + (instancetype)pullMenuAnchorPoint:(CGPoint)anchorPoint
-                         titleArray:(nullable NSArray *)titleArray;
+                      currentWindow:(nullable UIWindow *)currentWindow;
 + (instancetype)pullMenuAnchorPoint:(CGPoint)anchorPoint
                          titleArray:(nullable NSArray *)titleArray
-                         imageArray:(nullable NSArray *)imageArray;
+                      currentWindow:(nullable UIWindow *)currentWindow;
 + (instancetype)pullMenuAnchorPoint:(CGPoint)anchorPoint
-                          menuArray:(nullable NSArray <HFPullMenuModel *>*)menuArray;
+                         titleArray:(nullable NSArray *)titleArray
+                         imageArray:(nullable NSArray *)imageArray
+                      currentWindow:(nullable UIWindow *)currentWindow;
++ (instancetype)pullMenuAnchorPoint:(CGPoint)anchorPoint
+                          menuArray:(nullable NSArray <HFPullMenuModel *>*)menuArray
+                      currentWindow:(nullable UIWindow *)currentWindoww;
 
 @end
 
