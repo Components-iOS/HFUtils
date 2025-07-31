@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HFUtils'
-  s.version          = '0.1.8'
+  s.version          = '1.0.0'
   s.summary          = '工具类'
   s.description      = <<-DESC
 常用工具
@@ -62,5 +62,13 @@ Pod::Spec.new do |s|
   
   s.subspec 'PullMenuView' do |pullMenuView|
       pullMenuView.source_files = 'HFUtils/Classes/PullMenuView/**/*'
+  end
+  
+  s.subspec 'Constraint' do |constraint|
+      constraint.source_files = 'HFUtils/Classes/Constraint/**/*'
+  end
+  
+  s.subspec 'ViewStatus' do |viewStatus|
+      viewStatus.source_files = 'HFUtils/Classes/ViewStatus/**/*'
   end
 end

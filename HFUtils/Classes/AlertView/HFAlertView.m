@@ -245,7 +245,10 @@ HFTimerDisplay *buttonTimer;
     _viewText.frame = CGRectMake(12.0f, _subTitleY, _windowWidth - 24.0f, _subTitleHeight);
     _viewText.textContainerInset = UIEdgeInsetsZero;
     _viewText.textContainer.lineFragmentPadding = 0;
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
     self.automaticallyAdjustsScrollViewInsets = NO;
+#pragma clang diagnostic pop
     
     // Content View
     _contentView.backgroundColor = [UIColor whiteColor];

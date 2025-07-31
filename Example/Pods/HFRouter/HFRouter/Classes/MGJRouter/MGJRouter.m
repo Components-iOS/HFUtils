@@ -16,16 +16,19 @@ NSString *const MGJRouterParameterURL = @"MGJRouterParameterURL";
 NSString *const MGJRouterParameterCompletion = @"MGJRouterParameterCompletion";
 NSString *const MGJRouterParameterUserInfo = @"MGJRouterParameterUserInfo";
 
-
 @interface MGJRouter ()
 /**
  *  保存了所有已注册的 URL
  *  结构类似 @{@"beauty": @{@":id": {@"_", [block copy]}}}
  */
 @property (nonatomic) NSMutableDictionary *routes;
+
 @end
 
 @implementation MGJRouter
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 
 + (instancetype)sharedInstance
 {
@@ -320,5 +323,7 @@ NSString *const MGJRouterParameterUserInfo = @"MGJRouterParameterUserInfo";
     NSCharacterSet *specialCharactersSet = [NSCharacterSet characterSetWithCharactersInString:specialCharacters];
     return [checkedString rangeOfCharacterFromSet:specialCharactersSet].location != NSNotFound;
 }
+
+#pragma clang diagnostic pop
 
 @end

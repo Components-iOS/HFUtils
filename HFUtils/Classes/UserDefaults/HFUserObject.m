@@ -17,6 +17,9 @@
 
 @implementation HFUserObject
 
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
 - (instancetype)initWithIdentifier:(NSString *)identifier {
     NSData *userInfoData = [[NSUserDefaults standardUserDefaults] objectForKey:identifier];
     if (userInfoData == nil) {
@@ -142,4 +145,7 @@
     return self;
 }
 
+
 @end
+
+#pragma clang diagnostic pop
