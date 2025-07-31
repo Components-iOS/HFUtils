@@ -6,7 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "UIView+LoadState.h"
+#import "UIView+HFLoadState.h"
 
 typedef void (^NetworkReloadBlock) (void);
 typedef void (^NoDataActionBlock) (void);

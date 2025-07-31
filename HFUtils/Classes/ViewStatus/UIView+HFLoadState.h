@@ -1,5 +1,5 @@
 //
-//  UIView+LoadState.h
+//  UIView+HFLoadState.h
 //  HFUtils
 //
 //  Created by liuhongfei on 2025/7/30.
@@ -27,7 +27,7 @@ typedef NS_ENUM(NSInteger, HFViewState) {
 
 @class HFLoadStateProperty;
 
-@interface UIView (LoadState)
+@interface UIView (HFLoadState)
 
 @property (nonatomic) HFViewState viewState;
 @property (nonatomic, readonly) HFLoadStateProperty *stateProperties;

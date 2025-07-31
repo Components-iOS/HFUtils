@@ -1,11 +1,11 @@
 //
-//  UIView+LoadState.m
+//  UIView+HFLoadState.m
 //  HFUtils
 //
 //  Created by liuhongfei on 2025/7/30.
 //
 
-#import "UIView+LoadState.h"
+#import "UIView+HFLoadState.h"
 #import <objc/runtime.h>
 #import <HFUtils/HFMasonry.h>
 #import "HFLoadStateProperty.h"
@@ -24,7 +24,7 @@ const char * kHFErrorStateViewKey = "kHFErrorStateViewKey";
 
 @end
 
-@implementation UIView (LoadState)
+@implementation UIView (HFLoadState)
 
 @dynamic viewState;
 
