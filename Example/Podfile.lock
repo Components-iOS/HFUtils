@@ -18,31 +18,32 @@ PODS:
     - HFRouter/MGJRouter (= 0.1.0)
   - HFRouter/CTMediator (0.1.0)
   - HFRouter/MGJRouter (0.1.0)
-  - HFUtils (1.0.0):
-    - HFUtils/AlertView (= 1.0.0)
-    - HFUtils/Constraint (= 1.0.0)
-    - HFUtils/HUD (= 1.0.0)
-    - HFUtils/Model (= 1.0.0)
-    - HFUtils/PullMenuView (= 1.0.0)
-    - HFUtils/Reachability (= 1.0.0)
-    - HFUtils/SwipeCell (= 1.0.0)
-    - HFUtils/Timer (= 1.0.0)
-    - HFUtils/UserDefaults (= 1.0.0)
-    - HFUtils/ViewStatus (= 1.0.0)
-    - HFUtils/Window (= 1.0.0)
-  - HFUtils/AlertView (1.0.0):
+  - HFUtils (1.0.1):
+    - HFUtils/AlertView (= 1.0.1)
+    - HFUtils/Constraint (= 1.0.1)
+    - HFUtils/HUD (= 1.0.1)
+    - HFUtils/Model (= 1.0.1)
+    - HFUtils/PullMenuView (= 1.0.1)
+    - HFUtils/Reachability (= 1.0.1)
+    - HFUtils/SwipeCell (= 1.0.1)
+    - HFUtils/Timer (= 1.0.1)
+    - HFUtils/UserDefaults (= 1.0.1)
+    - HFUtils/ViewStatus (= 1.0.1)
+    - HFUtils/Window (= 1.0.1)
+  - HFUtils/AlertView (1.0.1):
     - HFUtils/Window
-  - HFUtils/Constraint (1.0.0)
-  - HFUtils/HUD (1.0.0):
+  - HFUtils/Constraint (1.0.1)
+  - HFUtils/HUD (1.0.1):
     - HFUtils/Window
-  - HFUtils/Model (1.0.0)
-  - HFUtils/PullMenuView (1.0.0)
-  - HFUtils/Reachability (1.0.0)
-  - HFUtils/SwipeCell (1.0.0)
-  - HFUtils/Timer (1.0.0)
-  - HFUtils/UserDefaults (1.0.0)
-  - HFUtils/ViewStatus (1.0.0)
-  - HFUtils/Window (1.0.0)
+  - HFUtils/Model (1.0.1)
+  - HFUtils/PullMenuView (1.0.1)
+  - HFUtils/Reachability (1.0.1)
+  - HFUtils/SwipeCell (1.0.1)
+  - HFUtils/Timer (1.0.1)
+  - HFUtils/UserDefaults (1.0.1)
+  - HFUtils/ViewStatus (1.0.1):
+    - HFUtils/Constraint
+  - HFUtils/Window (1.0.1)
 
 DEPENDENCIES:
   - HFMoMain (= 0.1.0)
@@ -60,7 +61,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   HFMoMain: 33f1dea501d7046dae820e38fb250eee9682ee53
   HFRouter: f75ea515014127a3b0e47a95524574523da07804
-  HFUtils: d799a2526b694cacf4af09bee075f9396ea1e8bc
+  HFUtils: 3c0e1cc27aed52728d39a8492e743cd87ce9d0ef
 
 PODFILE CHECKSUM: 9abdcd9841e7b6ed32b81a8b94f17b3358a5bab6
 

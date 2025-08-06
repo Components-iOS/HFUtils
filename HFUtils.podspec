@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HFUtils'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = '工具类'
   s.description      = <<-DESC
 常用工具
@@ -70,5 +70,6 @@ Pod::Spec.new do |s|
   
   s.subspec 'ViewStatus' do |viewStatus|
       viewStatus.source_files = 'HFUtils/Classes/ViewStatus/**/*'
+      viewStatus.dependency 'HFUtils/Constraint'
   end
 end
