@@ -255,7 +255,7 @@ HFTimerDisplay *buttonTimer;
     _contentView.layer.cornerRadius = 5.0f;
     _contentView.layer.masksToBounds = YES;
     _contentView.layer.borderWidth = 0.5f;
-    [_contentView addSubview:_viewText];    
+    [_contentView addSubview:_viewText];
     [_contentView addSubview:_labelTitle];
     
     // Colors
@@ -268,13 +268,28 @@ HFTimerDisplay *buttonTimer;
 - (void)setupNewWindow {
     // Save previous window
     self.previousWindow = [HFWindowVCHelper currentWindow];
-    
+
     // Create a new one to show the alert
-    UIWindow *alertWindow = [[UIWindow alloc] initWithFrame:[self mainScreenFrame]];
+    UIWindow *alertWindow;
+    
+    if (@available(iOS 13.0, *)) {
+        // iOS 13+
+        UIWindowScene *windowScene = [HFWindowVCHelper currentWindowScene];
+        if (windowScene) {
+            alertWindow = [[UIWindow alloc] initWithWindowScene:windowScene];
+        } else {
+            alertWindow = [[UIWindow alloc] initWithFrame:[self mainScreenFrame]];
+        }
+    } else {
+        // iOS 12
+        alertWindow = [[UIWindow alloc] initWithFrame:[self mainScreenFrame]];
+    }
+    
     alertWindow.windowLevel = UIWindowLevelAlert;
     alertWindow.backgroundColor = [UIColor clearColor];
     alertWindow.rootViewController = [UIViewController new];
     alertWindow.accessibilityViewIsModal = YES;
+    alertWindow.hidden = YES;
     self.HFAlertWindow = alertWindow;
     self.usingNewWindow = YES;
 }
@@ -800,7 +815,8 @@ HFTimerDisplay *buttonTimer;
 - (HFAlertViewResponder *)showTitle:(UIViewController *)vc image:(UIImage *)image color:(UIColor *)color title:(NSString *)title subTitle:(NSString *)subTitle duration:(NSTimeInterval)duration completeText:(NSString *)completeText style:(HFAlertViewStyle)style
 {
     if(_usingNewWindow) {
-
+        CGRect windowFrame = [self mainScreenFrame];
+        _HFAlertWindow.frame = windowFrame;
         self.backgroundView.frame = _HFAlertWindow.bounds;
         
         // Add window subview
@@ -1017,8 +1033,9 @@ HFTimerDisplay *buttonTimer;
         }
     }
     
-    if(_usingNewWindow)
+    if (_usingNewWindow)
     {
+        _HFAlertWindow.hidden = NO;
         [_HFAlertWindow makeKeyAndVisible];
     }
     
@@ -1175,7 +1192,16 @@ HFTimerDisplay *buttonTimer;
 
 - (CGRect)mainScreenFrame
 {
-    return [self isAppExtension] ? _extensionBounds : [UIApplication sharedApplication].keyWindow.bounds;
+    if ([self isAppExtension]) {
+        return _extensionBounds;
+    }
+    
+    UIWindow *currentWindow = [HFWindowVCHelper currentWindow];
+    if (currentWindow) {
+        return currentWindow.bounds;
+    }
+    
+    return [UIScreen mainScreen].bounds;
 }
 
 - (BOOL)isAppExtension
@@ -1195,7 +1221,7 @@ HFTimerDisplay *buttonTimer;
 
 - (void)makeBlurBackground
 {
-    UIView *appView = (_usingNewWindow) ? [UIApplication sharedApplication].keyWindow.subviews.lastObject : _rootViewController.view;
+    UIView *appView = (_usingNewWindow) ? [HFWindowVCHelper currentWindow].subviews.lastObject : _rootViewController.view;
     UIImage *image = [UIImage convertViewToImage:appView];
     UIImage *blurSnapshotImage = [image applyBlurWithRadius:5.0f
                                                   tintColor:[UIColor colorWithWhite:0.2f
@@ -1331,7 +1357,9 @@ HFTimerDisplay *buttonTimer;
     if (_usingNewWindow)
     {
         // Restore previous window
-        [self.previousWindow makeKeyAndVisible];
+        if (self.previousWindow) {
+            [self.previousWindow makeKeyAndVisible];
+        }
         self.previousWindow = nil;
     }
     
@@ -1639,10 +1667,10 @@ HFTimerDisplay *buttonTimer;
     });
 }
 
-
 @end
 
 @implementation HFAlertViewBuilder__WithFluent
+
 - (instancetype)init {
     if (self = [super init]) {
         [self setupFluent];
@@ -1650,9 +1678,11 @@ HFTimerDisplay *buttonTimer;
     return self;
 }
 - (void)setupFluent {}
+
 @end
 
 @interface HFALertViewTextFieldBuilder()
+
 #pragma mark - Parameters
 @property(copy, nonatomic) NSString *parameterTitle;
 @property(copy, nonatomic) NSString *parameterDefaultText;
@@ -1663,9 +1693,11 @@ HFTimerDisplay *buttonTimer;
 #pragma mark - Setters
 @property(copy, nonatomic) HFALertViewTextFieldBuilder *(^title) (NSString *title);
 @property(copy, nonatomic) HFALertViewTextFieldBuilder *(^defaultText) (NSString *defaultText);
+
 @end
 
 @implementation HFALertViewTextFieldBuilder
+
 - (void)setupFluent {
     __weak __auto_type weakSelf = self;
     self.title = ^(NSString *title){
@@ -1677,6 +1709,7 @@ HFTimerDisplay *buttonTimer;
         return weakSelf;
     };
 }
+
 @end
 
 @interface HFALertViewButtonBuilder()
@@ -1703,6 +1736,7 @@ HFTimerDisplay *buttonTimer;
 @end
 
 @implementation HFALertViewButtonBuilder
+
 - (void)setupFluent {
     __weak __auto_type weakSelf = self;
     self.title = ^(NSString *title){
@@ -1732,7 +1766,6 @@ HFTimerDisplay *buttonTimer;
 }
 
 @end
-
 
 @interface HFAlertViewBuilder()
 
@@ -1923,6 +1956,7 @@ HFTimerDisplay *buttonTimer;
     }
     return self;
 }
+
 - (instancetype)initWithNewWindow {
     self = [super init];
     if (self) {
@@ -1938,6 +1972,7 @@ HFTimerDisplay *buttonTimer;
     }
     return self;
 }
+
 @end
 
 @interface HFAlertViewShowBuilder()
@@ -1966,6 +2001,7 @@ HFTimerDisplay *buttonTimer;
 
 #pragma mark - Show
 @property(copy, nonatomic) void (^show)(HFAlertView *view, UIViewController *controller);
+
 @end
 
 @implementation HFAlertViewShowBuilder

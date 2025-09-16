@@ -11,26 +11,52 @@
 @implementation HFWindowVCHelper
 
 + (UIWindow *)currentWindow {
-    UIWindow *currentWindow = nil;
-
+    // iOS 13+
     if (@available(iOS 13.0, *)) {
         for (UIWindowScene *windowScene in [UIApplication sharedApplication].connectedScenes) {
-            if ([windowScene isKindOfClass:[UIWindowScene class]]) {
-                UIWindowScene *scene = (UIWindowScene *)windowScene;
-                for (UIWindow *window in scene.windows) {
+            if (windowScene.activationState == UISceneActivationStateForegroundActive) {
+                for (UIWindow *window in windowScene.windows) {
                     if (window.isKeyWindow) {
-                        currentWindow = window;
-                        break;
+                        return window;
                     }
                 }
-                if (currentWindow) break;
             }
         }
-    } else {
-        currentWindow = [UIApplication sharedApplication].keyWindow;
+        
+        for (UIWindowScene *windowScene in [UIApplication sharedApplication].connectedScenes) {
+            if (windowScene.activationState == UISceneActivationStateForegroundActive) {
+                for (UIWindow *window in windowScene.windows) {
+                    if (window.rootViewController != nil) {
+                        return window;
+                    }
+                }
+            }
+        }
     }
+    
+    // iOS 12
+    if ([UIApplication sharedApplication].keyWindow) {
+        return [UIApplication sharedApplication].keyWindow;
+    }
+    
+    return [UIApplication sharedApplication].windows.firstObject;
+}
 
-    return currentWindow;
++ (UIWindowScene *)currentWindowScene API_AVAILABLE(ios(13.0)) {
+    if (@available(iOS 13.0, *)) {
+        for (UIWindowScene *windowScene in [UIApplication sharedApplication].connectedScenes) {
+            if (windowScene.activationState == UISceneActivationStateForegroundActive) {
+                return windowScene;
+            }
+        }
+        
+        for (UIScene *scene in [UIApplication sharedApplication].connectedScenes) {
+            if ([scene isKindOfClass:[UIWindowScene class]]) {
+                return (UIWindowScene *)scene;
+            }
+        }
+    }
+    return nil;
 }
 
 + (UIViewController *)currentVC {

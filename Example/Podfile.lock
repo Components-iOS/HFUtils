@@ -1,52 +1,52 @@
 PODS:
-  - HFMoMain (0.1.0):
-    - HFMoMain/Controller (= 0.1.0)
-    - HFMoMain/PublicAPI (= 0.1.0)
-    - HFMoMain/View (= 0.1.0)
-    - HFRouter
-  - HFMoMain/Controller (0.1.0):
+  - HFMoMain (0.2.0):
+    - HFMoMain/Controller (= 0.2.0)
+    - HFMoMain/PublicAPI (= 0.2.0)
+    - HFMoMain/View (= 0.2.0)
+    - HFRouter (= 0.2.0)
+  - HFMoMain/Controller (0.2.0):
     - HFMoMain/View
-    - HFRouter
-  - HFMoMain/PublicAPI (0.1.0):
+    - HFRouter (= 0.2.0)
+  - HFMoMain/PublicAPI (0.2.0):
     - HFMoMain/Controller
     - HFMoMain/View
-    - HFRouter
-  - HFMoMain/View (0.1.0):
-    - HFRouter
-  - HFRouter (0.1.0):
-    - HFRouter/CTMediator (= 0.1.0)
-    - HFRouter/MGJRouter (= 0.1.0)
-  - HFRouter/CTMediator (0.1.0)
-  - HFRouter/MGJRouter (0.1.0)
-  - HFUtils (1.0.1):
-    - HFUtils/AlertView (= 1.0.1)
-    - HFUtils/Constraint (= 1.0.1)
-    - HFUtils/HUD (= 1.0.1)
-    - HFUtils/Model (= 1.0.1)
-    - HFUtils/PullMenuView (= 1.0.1)
-    - HFUtils/Reachability (= 1.0.1)
-    - HFUtils/SwipeCell (= 1.0.1)
-    - HFUtils/Timer (= 1.0.1)
-    - HFUtils/UserDefaults (= 1.0.1)
-    - HFUtils/ViewStatus (= 1.0.1)
-    - HFUtils/Window (= 1.0.1)
-  - HFUtils/AlertView (1.0.1):
+    - HFRouter (= 0.2.0)
+  - HFMoMain/View (0.2.0):
+    - HFRouter (= 0.2.0)
+  - HFRouter (0.2.0):
+    - HFRouter/CTMediator (= 0.2.0)
+    - HFRouter/MGJRouter (= 0.2.0)
+  - HFRouter/CTMediator (0.2.0)
+  - HFRouter/MGJRouter (0.2.0)
+  - HFUtils (1.0.2):
+    - HFUtils/AlertView (= 1.0.2)
+    - HFUtils/Constraint (= 1.0.2)
+    - HFUtils/HUD (= 1.0.2)
+    - HFUtils/Model (= 1.0.2)
+    - HFUtils/PullMenuView (= 1.0.2)
+    - HFUtils/Reachability (= 1.0.2)
+    - HFUtils/SwipeCell (= 1.0.2)
+    - HFUtils/Timer (= 1.0.2)
+    - HFUtils/UserDefaults (= 1.0.2)
+    - HFUtils/ViewStatus (= 1.0.2)
+    - HFUtils/Window (= 1.0.2)
+  - HFUtils/AlertView (1.0.2):
     - HFUtils/Window
-  - HFUtils/Constraint (1.0.1)
-  - HFUtils/HUD (1.0.1):
+  - HFUtils/Constraint (1.0.2)
+  - HFUtils/HUD (1.0.2):
     - HFUtils/Window
-  - HFUtils/Model (1.0.1)
-  - HFUtils/PullMenuView (1.0.1)
-  - HFUtils/Reachability (1.0.1)
-  - HFUtils/SwipeCell (1.0.1)
-  - HFUtils/Timer (1.0.1)
-  - HFUtils/UserDefaults (1.0.1)
-  - HFUtils/ViewStatus (1.0.1):
+  - HFUtils/Model (1.0.2)
+  - HFUtils/PullMenuView (1.0.2)
+  - HFUtils/Reachability (1.0.2)
+  - HFUtils/SwipeCell (1.0.2)
+  - HFUtils/Timer (1.0.2)
+  - HFUtils/UserDefaults (1.0.2)
+  - HFUtils/ViewStatus (1.0.2):
     - HFUtils/Constraint
-  - HFUtils/Window (1.0.1)
+  - HFUtils/Window (1.0.2)
 
 DEPENDENCIES:
-  - HFMoMain (= 0.1.0)
+  - HFMoMain (= 0.2.0)
   - HFUtils (from `../`)
 
 SPEC REPOS:
@@ -59,10 +59,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  HFMoMain: 33f1dea501d7046dae820e38fb250eee9682ee53
-  HFRouter: f75ea515014127a3b0e47a95524574523da07804
-  HFUtils: 3c0e1cc27aed52728d39a8492e743cd87ce9d0ef
+  HFMoMain: d12dc888d595f4528265e6f4d949378607c47017
+  HFRouter: d5ea85100b758cb378b3facbb6d35007a2c28f69
+  HFUtils: aba085f0300b5dee264fb5881a05359a19399132
 
-PODFILE CHECKSUM: 9abdcd9841e7b6ed32b81a8b94f17b3358a5bab6
+PODFILE CHECKSUM: 77aa66db30bea7bd248b77427ee738dec68b3a6e
 
 COCOAPODS: 1.16.2

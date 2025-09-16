@@ -14,6 +14,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (UIWindow *)currentWindow;
 
++ (UIWindowScene *)currentWindowScene API_AVAILABLE(ios(13.0));
+
 + (UIViewController *)currentVC;
 
 @end

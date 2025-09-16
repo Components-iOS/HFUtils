@@ -16,19 +16,16 @@ NSString *const MGJRouterParameterURL = @"MGJRouterParameterURL";
 NSString *const MGJRouterParameterCompletion = @"MGJRouterParameterCompletion";
 NSString *const MGJRouterParameterUserInfo = @"MGJRouterParameterUserInfo";
 
+
 @interface MGJRouter ()
 /**
  *  保存了所有已注册的 URL
  *  结构类似 @{@"beauty": @{@":id": {@"_", [block copy]}}}
  */
 @property (nonatomic) NSMutableDictionary *routes;
-
 @end
 
 @implementation MGJRouter
-
-#pragma clang diagnostic push
-#pragma clang diagnostic ignored "-Wdeprecated-declarations"
 
 + (instancetype)sharedInstance
 {
@@ -62,12 +59,12 @@ NSString *const MGJRouterParameterUserInfo = @"MGJRouterParameterUserInfo";
 
 + (void)openURL:(NSString *)URL withUserInfo:(NSDictionary *)userInfo completion:(void (^)(id result))completion
 {
-    URL = [URL stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    URL = [URL stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     NSMutableDictionary *parameters = [[self sharedInstance] extractParametersFromURL:URL matchExactly:NO];
     
     [parameters enumerateKeysAndObjectsUsingBlock:^(id key, NSString *obj, BOOL *stop) {
         if ([obj isKindOfClass:[NSString class]]) {
-            parameters[key] = [obj stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+            parameters[key] = [obj stringByRemovingPercentEncoding];
         }
     }];
     
@@ -137,7 +134,7 @@ NSString *const MGJRouterParameterUserInfo = @"MGJRouterParameterUserInfo";
 {
     MGJRouter *router = [MGJRouter sharedInstance];
     
-    URL = [URL stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    URL = [URL stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
     NSMutableDictionary *parameters = [router extractParametersFromURL:URL matchExactly:NO];
     MGJRouterObjectHandler handler = parameters[@"block"];
     
@@ -323,7 +320,5 @@ NSString *const MGJRouterParameterUserInfo = @"MGJRouterParameterUserInfo";
     NSCharacterSet *specialCharactersSet = [NSCharacterSet characterSetWithCharactersInString:specialCharacters];
     return [checkedString rangeOfCharacterFromSet:specialCharactersSet].location != NSNotFound;
 }
-
-#pragma clang diagnostic pop
 
 @end

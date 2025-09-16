@@ -94,6 +94,7 @@
  */
 
 #import "UIImage+ImageEffects.h"
+#import <HFUtils/HFWindowVCHelper.h>
 #import "HFMacros.h"
 
 #if defined(__has_feature) && __has_feature(modules)
@@ -296,7 +297,7 @@
 
 + (UIImage *)convertViewToImage
 {
-    UIWindow *keyWindow = [[UIApplication sharedApplication]keyWindow];
+    UIWindow *keyWindow = [HFWindowVCHelper currentWindow];
     CGRect rect = [keyWindow bounds];
     UIGraphicsBeginImageContextWithOptions(rect.size, YES, 0.0f);
     CGContextRef context = UIGraphicsGetCurrentContext();

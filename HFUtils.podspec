@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HFUtils'
-  s.version          = '1.0.1'
+  s.version          = '1.0.2'
   s.summary          = '工具类'
   s.description      = <<-DESC
 常用工具
