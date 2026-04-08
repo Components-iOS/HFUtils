@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+Target 'HFUtils' in project 'Pods'
+➜ Explicit dependency on target 'HFUtils-HFUtils' in project 'Pods'
+Target 'HFUtils-HFUtils' in project 'Pods' (no dependencies)

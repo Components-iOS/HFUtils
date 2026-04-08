@@ -48,6 +48,7 @@
 #import "HFSwipeButton.h"
 #import "HFSwipeTableCell.h"
 #import "HFGCDTimerManager.h"
+#import "HFUUIDHelper.h"
 #import "HFCodingObject.h"
 #import "HFKeychainUserDefaults.h"
 #import "HFUserDefaults.h"

@@ -1,0 +1,5 @@
+ extern const unsigned char HFUtilsVersionString[];
+ extern const double HFUtilsVersionNumber;
+
+ const unsigned char HFUtilsVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:HFUtils  PROJECT:Pods-1" "\n";
+ const double HFUtilsVersionNumber __attribute__ ((used)) = (double)1.;

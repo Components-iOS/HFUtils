@@ -1,0 +1,5 @@
+ extern const unsigned char HFMoMainVersionString[];
+ extern const double HFMoMainVersionNumber;
+
+ const unsigned char HFMoMainVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:HFMoMain  PROJECT:Pods-1" "\n";
+ const double HFMoMainVersionNumber __attribute__ ((used)) = (double)1.;

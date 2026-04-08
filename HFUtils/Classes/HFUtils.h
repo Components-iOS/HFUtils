@@ -46,4 +46,7 @@
 // Window
 #import "HFWindowVCHelper.h"
 
+// Window
+#import "HFUUIDHelper.h"
+
 #endif /* HFUtils_h */

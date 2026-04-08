@@ -1,0 +1,13 @@
+Target dependency graph (6 targets)
+Target 'Pods-HFUtils_Tests' in project 'Pods'
+➜ Explicit dependency on target 'Pods-HFUtils_Example' in project 'Pods'
+Target 'Pods-HFUtils_Example' in project 'Pods'
+➜ Explicit dependency on target 'HFMoMain' in project 'Pods'
+➜ Explicit dependency on target 'HFRouter' in project 'Pods'
+➜ Explicit dependency on target 'HFUtils' in project 'Pods'
+Target 'HFUtils' in project 'Pods'
+➜ Explicit dependency on target 'HFUtils-HFUtils' in project 'Pods'
+Target 'HFUtils-HFUtils' in project 'Pods' (no dependencies)
+Target 'HFMoMain' in project 'Pods'
+➜ Explicit dependency on target 'HFRouter' in project 'Pods'
+Target 'HFRouter' in project 'Pods' (no dependencies)

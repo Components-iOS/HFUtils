@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'HFUtils'
-  s.version          = '1.0.3'
+  s.version          = '1.1.0'
   s.summary          = '工具类'
   s.description      = <<-DESC
 常用工具
@@ -28,6 +28,10 @@ Pod::Spec.new do |s|
   
   s.subspec 'Window' do |window|
       window.source_files = 'HFUtils/Classes/Window/**/*'
+  end
+  
+  s.subspec 'UUID' do |uuid|
+      uuid.source_files = 'HFUtils/Classes/UUID/**/*'
   end
   
   s.subspec 'UserDefaults' do |user|

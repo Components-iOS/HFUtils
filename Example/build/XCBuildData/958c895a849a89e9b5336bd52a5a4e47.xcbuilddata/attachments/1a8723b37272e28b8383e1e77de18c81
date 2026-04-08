@@ -1,0 +1,5 @@
+ extern const unsigned char HFRouterVersionString[];
+ extern const double HFRouterVersionNumber;
+
+ const unsigned char HFRouterVersionString[] __attribute__ ((used)) = "@(#)PROGRAM:HFRouter  PROJECT:Pods-1" "\n";
+ const double HFRouterVersionNumber __attribute__ ((used)) = (double)1.;
