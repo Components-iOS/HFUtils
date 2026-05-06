@@ -8,7 +8,6 @@
 #import "HFReachability.h"
 #import <sys/socket.h>
 #import <netinet/in.h>
-#import <netinet6/in6.h>
 #import <arpa/inet.h>
 #import <ifaddrs.h>
 #import <netdb.h>
@@ -48,7 +47,6 @@ static NSString *hf_reachabilityFlags(SCNetworkReachabilityFlags flags)
 static void HFTMReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReachabilityFlags flags, void* info)
 {
 #pragma unused (target)
-
     HFReachability *reachability = ((__bridge HFReachability*)info);
 
     // We probably don't need an autoreleasepool here, as GCD docs state each queue has its own autorelease pool,
@@ -145,7 +143,6 @@ static void HFTMReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkR
 }
 
 // Initialization methods
-
 - (instancetype)initWithReachabilityRef:(SCNetworkReachabilityRef)ref
 {
     self = [super init];
@@ -367,16 +364,15 @@ static void HFTMReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkR
 - (BOOL)isInterventionRequired
 {
     SCNetworkReachabilityFlags flags;
-	
-	if (SCNetworkReachabilityGetFlags(self.reachabilityRef, &flags))
+    
+    if (SCNetworkReachabilityGetFlags(self.reachabilityRef, &flags))
     {
-		return ((flags & kSCNetworkReachabilityFlagsConnectionRequired) &&
-				(flags & kSCNetworkReachabilityFlagsInterventionRequired));
-	}
-	
-	return NO;
+        return ((flags & kSCNetworkReachabilityFlagsConnectionRequired) &&
+                (flags & kSCNetworkReachabilityFlagsInterventionRequired));
+    }
+    
+    return NO;
 }
-
 
 #pragma mark - reachability status stuff
 
@@ -384,10 +380,10 @@ static void HFTMReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkR
 {
     if ([self isReachable])
     {
-        if([self isReachableViaWiFi])
+        if ([self isReachableViaWiFi])
             return HFReachableViaWiFi;
         
-#if	TARGET_OS_IPHONE
+#if TARGET_OS_IPHONE
         return HFReachableViaWWAN;
 #endif
     }
@@ -407,21 +403,21 @@ static void HFTMReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkR
     return 0;
 }
 
-- (NSString*)currentReachabilityString
+- (NSString *)currentReachabilityString
 {
-	HFNetworkStatus temp = [self currentReachabilityStatus];
-	
-	if (temp == HFReachableViaWWAN)
-	{
+    HFNetworkStatus temp = [self currentReachabilityStatus];
+    
+    if (temp == HFReachableViaWWAN)
+    {
         // Updated for the fact that we have CDMA phones now!
-		return NSLocalizedString(@"Cellular", @"");
-	}
-	if (temp == HFReachableViaWiFi)
-	{
-		return NSLocalizedString(@"WiFi", @"");
-	}
-	
-	return NSLocalizedString(@"No Connection", @"");
+        return NSLocalizedString(@"Cellular", @"");
+    }
+    if (temp == HFReachableViaWiFi)
+    {
+        return NSLocalizedString(@"WiFi", @"");
+    }
+    
+    return NSLocalizedString(@"No Connection", @"");
 }
 
 - (NSString *)currentReachabilityFlags
