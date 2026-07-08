@@ -18,34 +18,36 @@ PODS:
     - HFRouter/MGJRouter (= 0.2.0)
   - HFRouter/CTMediator (0.2.0)
   - HFRouter/MGJRouter (0.2.0)
-  - HFUtils (1.1.0):
-    - HFUtils/AlertView (= 1.1.0)
-    - HFUtils/Constraint (= 1.1.0)
-    - HFUtils/HUD (= 1.1.0)
-    - HFUtils/Model (= 1.1.0)
-    - HFUtils/PullMenuView (= 1.1.0)
-    - HFUtils/Reachability (= 1.1.0)
-    - HFUtils/SwipeCell (= 1.1.0)
-    - HFUtils/Timer (= 1.1.0)
-    - HFUtils/UserDefaults (= 1.1.0)
-    - HFUtils/UUID (= 1.1.0)
-    - HFUtils/ViewStatus (= 1.1.0)
-    - HFUtils/Window (= 1.1.0)
-  - HFUtils/AlertView (1.1.0):
+  - HFUtils (1.1.1):
+    - HFUtils/AlertView (= 1.1.1)
+    - HFUtils/CheckBox (= 1.1.1)
+    - HFUtils/Constraint (= 1.1.1)
+    - HFUtils/HUD (= 1.1.1)
+    - HFUtils/Model (= 1.1.1)
+    - HFUtils/PullMenuView (= 1.1.1)
+    - HFUtils/Reachability (= 1.1.1)
+    - HFUtils/SwipeCell (= 1.1.1)
+    - HFUtils/Timer (= 1.1.1)
+    - HFUtils/UserDefaults (= 1.1.1)
+    - HFUtils/UUID (= 1.1.1)
+    - HFUtils/ViewStatus (= 1.1.1)
+    - HFUtils/Window (= 1.1.1)
+  - HFUtils/AlertView (1.1.1):
     - HFUtils/Window
-  - HFUtils/Constraint (1.1.0)
-  - HFUtils/HUD (1.1.0):
+  - HFUtils/CheckBox (1.1.1)
+  - HFUtils/Constraint (1.1.1)
+  - HFUtils/HUD (1.1.1):
     - HFUtils/Window
-  - HFUtils/Model (1.1.0)
-  - HFUtils/PullMenuView (1.1.0)
-  - HFUtils/Reachability (1.1.0)
-  - HFUtils/SwipeCell (1.1.0)
-  - HFUtils/Timer (1.1.0)
-  - HFUtils/UserDefaults (1.1.0)
-  - HFUtils/UUID (1.1.0)
-  - HFUtils/ViewStatus (1.1.0):
+  - HFUtils/Model (1.1.1)
+  - HFUtils/PullMenuView (1.1.1)
+  - HFUtils/Reachability (1.1.1)
+  - HFUtils/SwipeCell (1.1.1)
+  - HFUtils/Timer (1.1.1)
+  - HFUtils/UserDefaults (1.1.1)
+  - HFUtils/UUID (1.1.1)
+  - HFUtils/ViewStatus (1.1.1):
     - HFUtils/Constraint
-  - HFUtils/Window (1.1.0)
+  - HFUtils/Window (1.1.1)
 
 DEPENDENCIES:
   - HFMoMain (= 0.2.0)
@@ -63,7 +65,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   HFMoMain: d12dc888d595f4528265e6f4d949378607c47017
   HFRouter: d5ea85100b758cb378b3facbb6d35007a2c28f69
-  HFUtils: d0f3ad71e0af0d44513a0dd48bcbffd8dd3477e0
+  HFUtils: 52c269b2e10546dd6a4be61e9d1ec0c5a7112b1d
 
 PODFILE CHECKSUM: 77aa66db30bea7bd248b77427ee738dec68b3a6e
 

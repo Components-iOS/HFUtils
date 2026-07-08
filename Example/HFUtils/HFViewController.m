@@ -8,6 +8,7 @@
 
 #import "HFViewController.h"
 #import <HFUtils/HFUtils.h>
+#import <HFUtils/HFMasonry.h>
 
 @interface HFViewController ()
 
@@ -25,7 +26,19 @@
     self.title = @"HFUtils";
     self.view.backgroundColor = UIColor.whiteColor;
     
-    [self testPullMenuView];
+    HFCheckBox *checkBox = [[HFCheckBox alloc] initWithFrame:CGRectZero];
+    checkBox.boxType = HFBoxTypeSquare;
+    checkBox.onAnimationType = HFAnimationTypeFade;
+    checkBox.offAnimationType = HFAnimationTypeFade;
+    checkBox.onTintColor = UIColor.systemBlueColor;
+    checkBox.onCheckColor = UIColor.systemBlueColor;
+    checkBox.tintColor = UIColor.lightGrayColor;
+    [self.view addSubview:checkBox];
+    
+    [checkBox mas_makeConstraints:^(HFMASConstraintMaker *make) {
+        make.center.equalTo(self.view);
+        make.width.height.equalTo(@(24));
+    }];
 }
 
 - (void)testPullMenuView {

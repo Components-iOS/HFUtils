@@ -49,4 +49,7 @@
 // Window
 #import "HFUUIDHelper.h"
 
+// CheckBox
+#import "HFCheckBox.h"
+
 #endif /* HFUtils_h */

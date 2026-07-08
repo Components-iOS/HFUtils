@@ -76,4 +76,8 @@ Pod::Spec.new do |s|
       viewStatus.source_files = 'HFUtils/Classes/ViewStatus/**/*'
       viewStatus.dependency 'HFUtils/Constraint'
   end
+  
+  s.subspec 'CheckBox' do |checkBox|
+      checkBox.source_files = 'HFUtils/Classes/CheckBox/**/*'
+  end
 end

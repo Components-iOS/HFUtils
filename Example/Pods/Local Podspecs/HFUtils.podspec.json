@@ -1,6 +1,6 @@
 {
   "name": "HFUtils",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "summary": "工具类",
   "description": "常用工具",
   "homepage": "https://github.com/Components-iOS",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/Components-iOS/HFUtils.git",
-    "tag": "1.1.0"
+    "tag": "1.1.1"
   },
   "platforms": {
     "ios": "12.0"
@@ -81,6 +81,10 @@
       "dependencies": {
         "HFUtils/Constraint": []
       }
+    },
+    {
+      "name": "CheckBox",
+      "source_files": "HFUtils/Classes/CheckBox/**/*"
     }
   ]
 }
